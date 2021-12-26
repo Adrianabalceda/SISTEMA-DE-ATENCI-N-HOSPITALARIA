@@ -14,7 +14,7 @@
     $passwordUser = mysqli_real_escape_string($conexion, $passwordUser);
     $frmname = mysqli_real_escape_string($conexion, $frmname);
 
-    $sql = "SELECT * FROM $frmname WHERE id = '$id' AND contrasenia='$passwordUser'";
+    $sql = "SELECT * FROM $frmname WHERE id = '$id' AND contraseña='$passwordUser'";
     $result = mysqli_query($conexion, $sql);
     $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
     $count = mysqli_num_rows($result);

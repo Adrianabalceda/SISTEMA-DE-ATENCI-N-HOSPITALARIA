@@ -58,7 +58,7 @@ a {
 }
 
 .label-color {
-    color: #696F79;
+    color: #605d64;
     font-size: 16px;
 }
 
@@ -73,7 +73,7 @@ a {
 /*login-page*/
 
 .fst-quote-container {
-    background: linear-gradient(0deg, rgba(162, 128, 255, 0.9), rgba(151, 175, 255, 0.9)), url(https://d7lju56vlbdri.cloudfront.net/var/ezwebin_site/storage/images/_aliases/img_1col/noticias/mas-sars-cov-2-en-los-pasillos-de-hospitales-que-en-las-habitaciones-de-los-pacientes/9254010-1-esl-MX/Mas-SARS-CoV-2-en-los-pasillos-de-hospitales-que-en-las-habitaciones-de-los-pacientes.jpg);
+    background: linear-gradient(0deg, rgba(136, 128, 255, 0.9), rgba(151, 175, 255, 0.9)), url(https://d7lju56vlbdri.cloudfront.net/var/ezwebin_site/storage/images/_aliases/img_1col/noticias/mas-sars-cov-2-en-los-pasillos-de-hospitales-que-en-las-habitaciones-de-los-pacientes/9254010-1-esl-MX/Mas-SARS-CoV-2-en-los-pasillos-de-hospitales-que-en-las-habitaciones-de-los-pacientes.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -82,11 +82,13 @@ a {
 
 .text-quote-login {
     margin-top: 100px;
+    position: center;
 }
 
 .box-pre-login {
     min-height: 96px;
-    width: 426px;
+    position: center;
+    width: 450px;
     transition: all 300ms;
 }
 

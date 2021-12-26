@@ -52,7 +52,7 @@ const showLogin = (e) => {
         form.setAttribute('id', 'formAsegurado');
         frmname.setAttribute('value', 'asegurado');
     }
-    else if (idBtn.includes('Docente')) {
+    else if (idBtn.includes('Doctor')) {
         form.setAttribute('id', 'formDoctor');
         frmname.setAttribute('value', 'doctor');
     }
