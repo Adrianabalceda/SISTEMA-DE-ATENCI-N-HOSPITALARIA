@@ -5,7 +5,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font:400 14px 'Calibri','Arial';
-  padding:20px;
+  padding:10px;
 }
 
 *{
@@ -15,7 +15,7 @@ body {
 
 h1{
     color: black;
-    font-size: 40px;
+    font-size: 30px;
 }
 h2{
     color: black;
