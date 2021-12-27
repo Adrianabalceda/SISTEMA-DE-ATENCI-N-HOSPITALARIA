@@ -1,5 +1,5 @@
-const btnAlumno = document.getElementById('btnAsegurado');
-const btnDocente = document.getElementById('btnDoctor');
+const btnAsegurado = document.getElementById('btnAsegurado');
+const btnDoctor = document.getElementById('btnDoctor');
 const btnAdmin = document.getElementById('btnAdmin');
 const containerBtnRoles = document.getElementById('containerBtnRoles')
 const titleLoginPage = document.getElementById('titleLoginPage');
@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
         showError('El ID o la contraseña son incorrectos');
     }
 
-    btnAlumno.addEventListener('click', showLogin);
+    btnAsegurado.addEventListener('click', showLogin);
 
-    btnDocente.addEventListener('click', showLogin);
+    btnDoctor.addEventListener('click', showLogin);
 
     btnAdmin.addEventListener('click', showLogin);
 
