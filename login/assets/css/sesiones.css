@@ -1,6 +1,6 @@
 body {
     overflow-x: hidden;
-    background: linear-gradient(0deg, rgba(136, 128, 255, 0.2), rgba(151, 175, 255, 0.2)), url(https://www.comexperu.org.pe/upload/images/sem-1059_hechos-210121-055201.jpg);
+    background: url(https://sanjuandedios.pe/clinicalima/assets/images/banner-251121.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,8 +13,14 @@ body {
     padding: 0px;
 }
 
-
-
+h1{
+    color: black;
+    font-size: 40px;
+}
+h2{
+    color: black;
+    font-size: 20px;
+}
 table 			      { 
   border-spacing: 1; 
   border-collapse: collapse; 
@@ -33,7 +39,7 @@ table 			      {
 
   thead tr        { 
     height:60px;
-    background:#dfd4ff;
+    background:#d8d4ff;
     font-size:16px;
   }
   
@@ -55,7 +61,7 @@ blockquote {
 
 input, select, button{
    
-    background-color: rgb(93, 79, 218);
+    background-color: rgb(85, 73, 255);
     border: none;
     color: white;
    position: relative;
