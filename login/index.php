@@ -18,7 +18,7 @@
                 header('Location: sesiones.php');
             }
             else if($_SESSION['role'] == 'doctor'){
-                header('Location: doctor.php');
+                header('Location: Doctor/index.php');
             }
             else if($_SESSION['role']=='administrador'){
                 header('Location: admin_principal.php');
