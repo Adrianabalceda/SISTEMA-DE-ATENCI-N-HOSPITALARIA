@@ -67,8 +67,11 @@
 			    <li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="department.html" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Deparmentos<i class="icofont-thin-down"></i></a>
 					<ul class="dropdown-menu" aria-labelledby="dropdown02">
-						<li><a class="dropdown-item" href="department.html">Departamentos</a></li>
-						<li><a class="dropdown-item" href="department-single.html">Department Single</a></li>
+						<li><a class="dropdown-item" href="department.html">Medicina General</a></li>
+						<li><a class="dropdown-item" href="department-single.html">Cardiología</a></li>
+						<li><a class="dropdown-item" href="department-single.html">Neurología</a></li>
+						<li><a class="dropdown-item" href="department-single.html">Pediatría</a></li>
+						<li><a class="dropdown-item" href="department-single.html">Dermatología</a></li>
 					</ul>
 			  	</li>
 
@@ -201,7 +204,7 @@
 					</div>
 
 					<div class="content">
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+						<p class="mb-4">Equipo de calidad para realizar todas las pruebas necesarias.</p>
 					</div>
 				</div>
 			</div>
@@ -210,10 +213,10 @@
 				<div class="service-item mb-4">
 					<div class="icon d-flex align-items-center">
 						<i class="icofont-heart-beat-alt text-lg"></i>
-						<h4 class="mt-3 mb-3">Enfermedades cardiacas</h4>
+						<h4 class="mt-3 mb-3">Cardiología</h4>
 					</div>
 					<div class="content">
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+						<p class="mb-4">Para el cuidado de su corazón.</p>
 					</div>
 				</div>
 			</div>
@@ -222,10 +225,10 @@
 				<div class="service-item mb-4">
 					<div class="icon d-flex align-items-center">
 						<i class="icofont-tooth text-lg"></i>
-						<h4 class="mt-3 mb-3">Cuidado dental</h4>
+						<h4 class="mt-3 mb-3">Medicina General</h4>
 					</div>
 					<div class="content">
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+						<p class="mb-4">El mejor tratamiento médico para todas sus necesidades.</p>
 					</div>
 				</div>
 			</div>
@@ -235,11 +238,11 @@
 				<div class="service-item mb-4">
 					<div class="icon d-flex align-items-center">
 						<i class="icofont-crutch text-lg"></i>
-						<h4 class="mt-3 mb-3">Cirugía corporal</h4>
+						<h4 class="mt-3 mb-3">Pediatría</h4>
 					</div>
 
 					<div class="content">
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+						<p class="mb-4">Para el cuidado de los que más quiere.</p>
 					</div>
 				</div>
 			</div>
@@ -251,7 +254,7 @@
 						<h4 class="mt-3 mb-3">Neurocirugía</h4>
 					</div>
 					<div class="content">
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+						<p class="mb-4">Los mejores cirujanos.</p>
 					</div>
 				</div>
 			</div>
@@ -260,10 +263,10 @@
 				<div class="service-item mb-4">
 					<div class="icon d-flex align-items-center">
 						<i class="icofont-dna-alt-1 text-lg"></i>
-						<h4 class="mt-3 mb-3">Ginecología</h4>
+						<h4 class="mt-3 mb-3">Dermatología</h4>
 					</div>
 					<div class="content">
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+						<p class="mb-4">Para el mejor cuidado de su piel.</p>
 					</div>
 				</div>
 			</div>
@@ -299,11 +302,11 @@
 					<div class="divider mb-4"></div>
 
 					<ul class="list-unstyled footer-menu lh-35">
-						<li><a href="#">Cirugía </a></li>
-						<li><a href="#">Wome's Health</a></li>
-						<li><a href="#">Radiology</a></li>
-						<li><a href="#">Cardioc</a></li>
-						<li><a href="#">Medicine</a></li>
+						<li><a href="#">Medicina General</a></li>
+						<li><a href="#">Cardiología</a></li>
+						<li><a href="#">Neurología</a></li>
+						<li><a href="#">Pediatría</a></li>
+						<li><a href="#">Dermatología</a></li>
 					</ul>
 				</div>
 			</div>
@@ -316,7 +319,7 @@
 					<ul class="list-unstyled footer-menu lh-35">
 						<li><a href="#">Términos & Condiciones</a></li>
 						<li><a href="#">Política de Privacidad</a></li>
-						<li><a href="#">Apoyo de la Compañáa </a></li>
+						<li><a href="#">Apoyo de la Compañía </a></li>
 						<li><a href="#">Preguntas & Respuestas</a></li>
 						<li><a href="#">Licencia de la compañía</a></li>
 					</ul>
