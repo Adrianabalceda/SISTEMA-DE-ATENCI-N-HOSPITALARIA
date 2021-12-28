@@ -224,7 +224,7 @@
 					
 					</li>
 					<li>
-						<a href="calendar.html" class="dropdown-toggle no-arrow">
+						<a href="calendar.php" class="dropdown-toggle no-arrow">
 							<span class="micon dw dw-calendar1"></span><span class="mtext">Calendario</span>
 						</a>
 					</li>
@@ -232,7 +232,7 @@
 					
 					
 					<li>
-						<a href="chat.html" class="dropdown-toggle no-arrow">
+						<a href="chat.php" class="dropdown-toggle no-arrow">
 							<span class="micon dw dw-chat3"></span><span class="mtext">Chat</span>
 						</a>
 					</li>
@@ -267,8 +267,8 @@
 							</div>
 							<nav aria-label="breadcrumb" role="navigation">
 								<ol class="breadcrumb">
-									<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-									<li class="breadcrumb-item active" aria-current="page">Calendar</li>
+									<li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
+									<li class="breadcrumb-item active" aria-current="page">Calendario</li>
 								</ol>
 							</nav>
 						</div>

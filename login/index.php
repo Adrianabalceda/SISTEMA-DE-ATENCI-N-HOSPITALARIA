@@ -15,7 +15,7 @@
         
         if(isset($_SESSION['datos_usuario'])) {
             if($_SESSION['role'] == 'asegurado'){
-                header('Location: sesiones.php');
+                header('Location: Asegurado/index.php');
             }
             else if($_SESSION['role'] == 'doctor'){
                 header('Location: Doctor/index.php');

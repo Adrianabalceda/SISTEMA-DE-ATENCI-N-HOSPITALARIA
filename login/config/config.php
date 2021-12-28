@@ -1,6 +1,6 @@
 <?php
     $servidor = 'localhost';
     $usuario = 'root';
-    $password = '';
+    $password = 'puertaploma';
     $basedatos = 'sah';
 ?>
