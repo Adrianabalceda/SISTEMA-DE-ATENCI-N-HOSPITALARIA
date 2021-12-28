@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="es">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="description" content="Orbitor,business,company,agency,modern,bootstrap4,tech,software">
@@ -39,7 +39,7 @@
 					<div class="text-lg-right top-right-bar mt-2 mt-lg-0">
 						<a href="tel:+23-345-67890" >
 							<span>Llámanos : </span>
-							<span class="h4">823-4565-13456</span>
+							<span class="h4">555-5555</span>
 						</a>
 					</div>
 				</div>
@@ -67,8 +67,11 @@
 			    <li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="department.html" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Deparmentos<i class="icofont-thin-down"></i></a>
 					<ul class="dropdown-menu" aria-labelledby="dropdown02">
-						<li><a class="dropdown-item" href="department.html">Departamentos</a></li>
-						<li><a class="dropdown-item" href="department-single.html">Department Single</a></li>
+						<li><a class="dropdown-item" href="department.html">Medicina General</a></li>
+						<li><a class="dropdown-item" href="department-single.html">Cardiología</a></li>
+						<li><a class="dropdown-item" href="department-single.html">Neurología</a></li>
+						<li><a class="dropdown-item" href="department-single.html">Pediatría</a></li>
+						<li><a class="dropdown-item" href="department-single.html">Dermatología</a></li>
 					</ul>
 			  	</li>
 
@@ -76,8 +79,8 @@
 					<a class="nav-link dropdown-toggle" href="doctor.html" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Doctores <i class="icofont-thin-down"></i></a>
 					<ul class="dropdown-menu" aria-labelledby="dropdown03">
 						<li><a class="dropdown-item" href="doctor.html">Directivos</a></li>
-						<li><a class="dropdown-item" href="doctor-single.html">Doctor Single</a></li>
-						<li><a class="dropdown-item" href="appoinment.html">Appoinment</a></li>
+						<li><a class="dropdown-item" href="doctor-single.html">Doctor Individual</a></li>
+						<li><a class="dropdown-item" href="appoinment.html">Cita</a></li>
 					</ul>
 			  	</li>
 
@@ -120,22 +123,22 @@
 						<div class="feature-icon mb-4">
 							<i class="icofont-surgeon-alt"></i>
 						</div>
-						<span>24 Hours Service</span>
-						<h4 class="mb-3">Online Appoinment</h4>
-						<p class="mb-4">Get ALl time support for emergency.We have introduced the principle of family medicine.</p>
-						<a href="appoinment.html" class="btn btn-main btn-round-full">Make a appoinment</a>
+						<span>Servicio las 24 horas</span>
+						<h4 class="mb-3">Citas Online</h4>
+						<p class="mb-4">Obtenga todo el apoyo que necesite las 24 horas del día los 7 días a las semana</p>
+						<a href="appoinment.html" class="btn btn-main btn-round-full">Registrar una cita</a>
 					</div>
 				
 					<div class="feature-item mb-5 mb-lg-0">
 						<div class="feature-icon mb-4">
 							<i class="icofont-ui-clock"></i>
 						</div>
-						<span>Timing schedule</span>
-						<h4 class="mb-3">Working Hours</h4>
+						<span>Horarios</span>
+						<h4 class="mb-3">Horas de trabajo</h4>
 						<ul class="w-hours list-unstyled">
-		                    <li class="d-flex justify-content-between">Sun - Wed : <span>8:00 - 17:00</span></li>
-		                    <li class="d-flex justify-content-between">Thu - Fri : <span>9:00 - 17:00</span></li>
-		                    <li class="d-flex justify-content-between">Sat - sun : <span>10:00 - 17:00</span></li>
+		                    <li class="d-flex justify-content-between">Dom - Mie : <span>8:00 - 17:00</span></li>
+		                    <li class="d-flex justify-content-between">Jue - Vie : <span>9:00 - 17:00</span></li>
+		                    <li class="d-flex justify-content-between">Sab - Dom : <span>10:00 - 17:00</span></li>
 		                </ul>
 					</div>
 				
@@ -143,9 +146,9 @@
 						<div class="feature-icon mb-4">
 							<i class="icofont-support"></i>
 						</div>
-						<span>Emegency Cases</span>
-						<h4 class="mb-3">1-800-700-6200</h4>
-						<p>Get ALl time support for emergency.We have introduced the principle of family medicine.Get Conneted with us for any urgency .</p>
+						<span>Casos de emergencia</span>
+						<h4 class="mb-3">555 - 555</h4>
+						<p>Obtenga el apoyo que necesita las 24 horas del día los 7 días de la semana. Contáctenos por cualquier emergencia</p>
 					</div>
 				</div>
 			</div>
@@ -170,10 +173,10 @@
 			</div>
 			<div class="col-lg-4">
 				<div class="about-content pl-4 mt-4 mt-lg-0">
-					<h2 class="title-color">Personal care <br>& healthy living</h2>
-					<p class="mt-4 mb-5">We provide best leading medicle service Nulla perferendis veniam deleniti ipsum officia dolores repellat laudantium obcaecati neque.</p>
+					<h2 class="title-color">Salud personal <br>& vida saludable</h2>
+					<p class="mt-4 mb-5">Proveemos el mejor servicio de Lima metropolitana con atención las 24 / 7 y los mejores médicos.</p>
 
-					<a href="service.html" class="btn btn-main-2 btn-round-full btn-icon">Services<i class="icofont-simple-right ml-3"></i></a>
+					<a href="service.html" class="btn btn-main-2 btn-round-full btn-icon">Servicios<i class="icofont-simple-right ml-3"></i></a>
 				</div>
 			</div>
 		</div>
@@ -185,9 +188,9 @@
 		<div class="row justify-content-center">
 			<div class="col-lg-7 text-center">
 				<div class="section-title">
-					<h2>Award winning patient care</h2>
+					<h2>Atención ganadora de premios</h2>
 					<div class="divider mx-auto my-4"></div>
-					<p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
+					<p>La mejor atención de Lima Metropolitana, el mejor servicio para usted y los que más ama.</p>
 				</div>
 			</div>
 		</div>
@@ -197,11 +200,11 @@
 				<div class="service-item mb-4">
 					<div class="icon d-flex align-items-center">
 						<i class="icofont-laboratory text-lg"></i>
-						<h4 class="mt-3 mb-3">Laboratory services</h4>
+						<h4 class="mt-3 mb-3">Laboratorio</h4>
 					</div>
 
 					<div class="content">
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+						<p class="mb-4">Equipo de calidad para realizar todas las pruebas necesarias.</p>
 					</div>
 				</div>
 			</div>
@@ -210,10 +213,10 @@
 				<div class="service-item mb-4">
 					<div class="icon d-flex align-items-center">
 						<i class="icofont-heart-beat-alt text-lg"></i>
-						<h4 class="mt-3 mb-3">Heart Disease</h4>
+						<h4 class="mt-3 mb-3">Cardiología</h4>
 					</div>
 					<div class="content">
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+						<p class="mb-4">Para el cuidado de su corazón.</p>
 					</div>
 				</div>
 			</div>
@@ -222,10 +225,10 @@
 				<div class="service-item mb-4">
 					<div class="icon d-flex align-items-center">
 						<i class="icofont-tooth text-lg"></i>
-						<h4 class="mt-3 mb-3">Dental Care</h4>
+						<h4 class="mt-3 mb-3">Medicina General</h4>
 					</div>
 					<div class="content">
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+						<p class="mb-4">El mejor tratamiento médico para todas sus necesidades.</p>
 					</div>
 				</div>
 			</div>
@@ -235,11 +238,11 @@
 				<div class="service-item mb-4">
 					<div class="icon d-flex align-items-center">
 						<i class="icofont-crutch text-lg"></i>
-						<h4 class="mt-3 mb-3">Body Surgery</h4>
+						<h4 class="mt-3 mb-3">Pediatría</h4>
 					</div>
 
 					<div class="content">
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+						<p class="mb-4">Para el cuidado de los que más quiere.</p>
 					</div>
 				</div>
 			</div>
@@ -248,10 +251,10 @@
 				<div class="service-item mb-4">
 					<div class="icon d-flex align-items-center">
 						<i class="icofont-brain-alt text-lg"></i>
-						<h4 class="mt-3 mb-3">Neurology Sargery</h4>
+						<h4 class="mt-3 mb-3">Neurocirugía</h4>
 					</div>
 					<div class="content">
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+						<p class="mb-4">Los mejores cirujanos.</p>
 					</div>
 				</div>
 			</div>
@@ -260,10 +263,10 @@
 				<div class="service-item mb-4">
 					<div class="icon d-flex align-items-center">
 						<i class="icofont-dna-alt-1 text-lg"></i>
-						<h4 class="mt-3 mb-3">Gynecology</h4>
+						<h4 class="mt-3 mb-3">Dermatología</h4>
 					</div>
 					<div class="content">
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+						<p class="mb-4">Para el mejor cuidado de su piel.</p>
 					</div>
 				</div>
 			</div>
@@ -283,7 +286,7 @@
 					<div class="logo mb-4">
 						<img widht="200px" src="logo color/logo_large.png" alt="" class="img-fluid">
 					</div>
-					<p>Tempora dolorem voluptatum nam vero assumenda voluptate, facilis ad eos obcaecati tenetur veritatis eveniet distinctio possimus.</p>
+					<p>Plataforma en línea puesta a disposición de los asegurados del Hospital San Juan.</p>
 
 					<ul class="list-inline footer-socials mt-4">
 						<li class="list-inline-item"><a href="https://www.facebook.com/themefisher"><i class="icofont-facebook"></i></a></li>
@@ -295,53 +298,53 @@
 
 			<div class="col-lg-2 col-md-6 col-sm-6">
 				<div class="widget mb-5 mb-lg-0">
-					<h4 class="text-capitalize mb-3">Department</h4>
+					<h4 class="text-capitalize mb-3">Departmentos</h4>
 					<div class="divider mb-4"></div>
 
 					<ul class="list-unstyled footer-menu lh-35">
-						<li><a href="#">Surgery </a></li>
-						<li><a href="#">Wome's Health</a></li>
-						<li><a href="#">Radiology</a></li>
-						<li><a href="#">Cardioc</a></li>
-						<li><a href="#">Medicine</a></li>
+						<li><a href="#">Medicina General</a></li>
+						<li><a href="#">Cardiología</a></li>
+						<li><a href="#">Neurología</a></li>
+						<li><a href="#">Pediatría</a></li>
+						<li><a href="#">Dermatología</a></li>
 					</ul>
 				</div>
 			</div>
 
 			<div class="col-lg-2 col-md-6 col-sm-6">
 				<div class="widget mb-5 mb-lg-0">
-					<h4 class="text-capitalize mb-3">Support</h4>
+					<h4 class="text-capitalize mb-3">Nosotros</h4>
 					<div class="divider mb-4"></div>
 
 					<ul class="list-unstyled footer-menu lh-35">
-						<li><a href="#">Terms & Conditions</a></li>
-						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="#">Company Support </a></li>
-						<li><a href="#">FAQuestions</a></li>
-						<li><a href="#">Company Licence</a></li>
+						<li><a href="#">Términos & Condiciones</a></li>
+						<li><a href="#">Política de Privacidad</a></li>
+						<li><a href="#">Apoyo de la Compañía </a></li>
+						<li><a href="#">Preguntas & Respuestas</a></li>
+						<li><a href="#">Licencia de la compañía</a></li>
 					</ul>
 				</div>
 			</div>
 
 			<div class="col-lg-3 col-md-6 col-sm-6">
 				<div class="widget widget-contact mb-5 mb-lg-0">
-					<h4 class="text-capitalize mb-3">Get in Touch</h4>
+					<h4 class="text-capitalize mb-3">Contáctenos</h4>
 					<div class="divider mb-4"></div>
 
 					<div class="footer-contact-block mb-4">
 						<div class="icon d-flex align-items-center">
 							<i class="icofont-email mr-3"></i>
-							<span class="h6 mb-0">Support Available for 24/7</span>
+							<span class="h6 mb-0">Apoyo disponible las 24/7</span>
 						</div>
-						<h4 class="mt-2"><a href="tel:+23-345-67890">Support@email.com</a></h4>
+						<h4 class="mt-2"><a href="tel:+23-345-67890">Contáctenos@email.com</a></h4>
 					</div>
 
 					<div class="footer-contact-block">
 						<div class="icon d-flex align-items-center">
 							<i class="icofont-support mr-3"></i>
-							<span class="h6 mb-0">Mon to Fri : 08:30 - 18:00</span>
+							<span class="h6 mb-0">Lun a Vie : 08:30 - 18:00</span>
 						</div>
-						<h4 class="mt-2"><a href="tel:+23-345-67890">+23-456-6588</a></h4>
+						<h4 class="mt-2"><a href="tel:+23-345-67890">555 - 5555</a></h4>
 					</div>
 				</div>
 			</div>
@@ -357,8 +360,8 @@
 				<div class="col-lg-6">
 					<div class="subscribe-form text-lg-right mt-5 mt-lg-0">
 						<form action="#" class="subscribe">
-							<input type="text" class="form-control" placeholder="Your Email address">
-							<a href="#" class="btn btn-main-2 btn-round-full">Subscribe</a>
+							<input type="text" class="form-control" placeholder="Tu dirección de correo">
+							<a href="#" class="btn btn-main-2 btn-round-full">Suscribirse</a>
 						</form>
 					</div>
 				</div>
