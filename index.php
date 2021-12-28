@@ -59,7 +59,7 @@
 		  <div class="collapse navbar-collapse" id="navbarmain">
 			<ul class="navbar-nav ml-auto">
 			  <li class="nav-item active">
-				<a class="nav-link" href="index.html">Inicio</a>
+				<a class="nav-link" href="index.php">Inicio</a>
 			  </li>
 			   <li class="nav-item"><a class="nav-link" href="about.html">Sobre nosotros</a></li>
 			    <li class="nav-item"><a class="nav-link" href="service.html">Especialidades</a></li>
