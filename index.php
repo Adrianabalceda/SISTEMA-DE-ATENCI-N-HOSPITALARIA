@@ -5,7 +5,7 @@
   <meta name="description" content="Orbitor,business,company,agency,modern,bootstrap4,tech,software">
   <meta name="author" content="themefisher.com">
 
-  <title>Medifind - Sistema de atención hospitalaria</title>
+  <title>Medifind - Sistema de atención Hospitalaria</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" type="logo color/logo_small_icon_only.png" href="/images/favicon.ico" />
