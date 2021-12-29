@@ -215,9 +215,9 @@
 
 					<ul class="list-unstyled footer-menu lh-35">
 						<li><a href="medicina-general.php">Medicina General</a></li>
-						<li><a href="/cardiologia.php">Cardiología</a></li>
-						<li><a href="/neurologia.php">Neurología</a></li>
-						<li><a href="/pediatria.php">Pediatría</a></li>
+						<li><a href="cardiologia.php">Cardiología</a></li>
+						<li><a href="neurologia.php">Neurología</a></li>
+						<li><a href="pediatria.php">Pediatría</a></li>
 						<li><a href="dermatologia.php">Dermatología</a></li>
 					</ul>
 				</div>

@@ -26,71 +26,71 @@
 
 <body id="top">
 
-<header>
-	<div class="header-top-bar">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-6">
-					<ul class="top-bar-info list-inline-item pl-0 mb-0">
-						<li class="list-inline-item"><a href="mailto:support@gmail.com"><i class="icofont-support-faq mr-2"></i>plat_online@medifind.com</a></li>
-						<li class="list-inline-item"><i class="icofont-location-pin mr-2"></i>Av. Canto Grande, San Juan de Lurigancho</li>
-					</ul>
-				</div>
-				<div class="col-lg-6">
-					<div class="text-lg-right top-right-bar mt-2 mt-lg-0">
-						<a href="tel:+23-345-67890" >
-							<span>Llámanos : </span>
-							<span class="h4">555 - 5555</span>
-						</a>
+	<header>
+		<div class="header-top-bar">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6">
+						<ul class="top-bar-info list-inline-item pl-0 mb-0">
+							<li class="list-inline-item"><a href="mailto:support@gmail.com"><i class="icofont-support-faq mr-2"></i>plat_online@medifind.com</a></li>
+							<li class="list-inline-item"><i class="icofont-location-pin mr-2"></i>Av. Canto Grande, San Juan de Lurigancho</li>
+						</ul>
+					</div>
+					<div class="col-lg-6">
+						<div class="text-lg-right top-right-bar mt-2 mt-lg-0">
+							<a href="tel:+23-345-67890">
+								<span>Llámanos : </span>
+								<span class="h4">555 - 5555</span>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<nav class="navbar navbar-expand-lg navigation" id="navbar">
-		<div class="container">
-		 	 <a class="navbar-brand" href="index.php">
-			  	<img  width="180px" height="60px"src="logo color/logo_large.png" alt="" class="img-fluid">
-			  </a>
+		<nav class="navbar navbar-expand-lg navigation" id="navbar">
+			<div class="container">
+				<a class="navbar-brand" href="index.php">
+					<img width="180px" height="60px" src="logo color/logo_large.png" alt="" class="img-fluid">
+				</a>
 
-		  	<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarmain" aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="icofont-navigation-menu"></span>
-		  </button>
-	  
-		  <div class="collapse navbar-collapse" id="navbarmain">
-			<ul class="navbar-nav ml-auto">
-			  <li class="nav-item active">
-				<a class="nav-link" href="index.php">Inicio</a>
-			  </li>
-			   <li class="nav-item"><a class="nav-link" href="nosotros.php">Sobre nosotros</a></li>
-			    <li class="nav-item"><a class="nav-link" href="especialidades.php">Especialidades</a></li>
+				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarmain" aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icofont-navigation-menu"></span>
+				</button>
 
-			    <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Deparmentos <i class="icofont-thin-down"></i></a>
-					<ul class="dropdown-menu" aria-labelledby="dropdown02">
-						<li><a class="dropdown-item" href="medicina-general.php">Medicina General</a></li>
-						<li><a class="dropdown-item" href="cardiologia.php">Cardiología</a></li>
-						<li><a class="dropdown-item" href="neurologia.php">Neurología</a></li>
-						<li><a class="dropdown-item" href="pediatria.php">Pediatría</a></li>
-						<li><a class="dropdown-item" href="dermatologia.php">Dermatología</a></li>
+				<div class="collapse navbar-collapse" id="navbarmain">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.php">Inicio</a>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="nosotros.php">Sobre nosotros</a></li>
+						<li class="nav-item"><a class="nav-link" href="especialidades.php">Especialidades</a></li>
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Deparmentos <i class="icofont-thin-down"></i></a>
+							<ul class="dropdown-menu" aria-labelledby="dropdown02">
+								<li><a class="dropdown-item" href="medicina-general.php">Medicina General</a></li>
+								<li><a class="dropdown-item" href="cardiologia.php">Cardiología</a></li>
+								<li><a class="dropdown-item" href="neurologia.php">Neurología</a></li>
+								<li><a class="dropdown-item" href="pediatria.php">Pediatría</a></li>
+								<li><a class="dropdown-item" href="dermatologia.php">Dermatología</a></li>
+							</ul>
+						</li>
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="doctor.php" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Doctores <i class="icofont-thin-down"></i></a>
+							<ul class="dropdown-menu" aria-labelledby="dropdown03">
+								<li><a class="dropdown-item" href="doctor.php">Directivos</a></li>
+								<li><a class="dropdown-item" href="appoinment.php">Cita</a></li>
+							</ul>
+						</li>
+
+
+						<li class="nav-item"><a class="nav-link" href="contactanos.php">Contáctanos</a></li>
 					</ul>
-			  	</li>
-
-			  	<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="doctor.php" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Doctores <i class="icofont-thin-down"></i></a>
-					<ul class="dropdown-menu" aria-labelledby="dropdown03">
-						<li><a class="dropdown-item" href="doctor.php">Directivos</a></li>
-						<li><a class="dropdown-item" href="appoinment.php">Cita</a></li>
-					</ul>
-			  	</li>
-
-		
-			   <li class="nav-item"><a class="nav-link" href="contactanos.php">Contáctanos</a></li>
-			</ul>
-		  </div>
-		</div>
-	</nav>
-</header>
+				</div>
+			</div>
+		</nav>
+	</header>
 
 
 
@@ -263,104 +263,104 @@
 
 	<!-- footer Start -->
 	<footer class="footer section gray-bg">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-4 mr-auto col-sm-6">
-				<div class="widget mb-5 mb-lg-0">
-					<div class="logo mb-4">
-						<img widht="200px" src="logo color/logo_large.png" alt="" class="img-fluid">
-					</div>
-					<p>Plataforma en línea puesta a disposición de los asegurados del Hospital San Juan.</p>
-
-					<ul class="list-inline footer-socials mt-4">
-						<li class="list-inline-item"><a href="https://www.facebook.com/"><i class="icofont-facebook"></i></a></li>
-						<li class="list-inline-item"><a href="https://twitter.com/"><i class="icofont-twitter"></i></a></li>
-						<li class="list-inline-item"><a href="https://www.pinterest.com/"><i class="icofont-linkedin"></i></a></li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="col-lg-2 col-md-6 col-sm-6">
-				<div class="widget mb-5 mb-lg-0">
-					<h4 class="text-capitalize mb-3">Departmentos</h4>
-					<div class="divider mb-4"></div>
-
-					<ul class="list-unstyled footer-menu lh-35">
-						<li><a href="medicina-general.php">Medicina General</a></li>
-						<li><a href="/cardiologia.php">Cardiología</a></li>
-						<li><a href="/neurologia.php">Neurología</a></li>
-						<li><a href="/pediatria.php">Pediatría</a></li>
-						<li><a href="dermatologia.php">Dermatología</a></li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="col-lg-2 col-md-6 col-sm-6">
-				<div class="widget mb-5 mb-lg-0">
-					<h4 class="text-capitalize mb-3">Nosotros</h4>
-					<div class="divider mb-4"></div>
-
-					<ul class="list-unstyled footer-menu lh-35">
-						<li><a href="#">Términos & Condiciones</a></li>
-						<li><a href="#">Política de Privacidad</a></li>
-						<li><a href="#">Apoyo de la Compañía </a></li>
-						<li><a href="#">Preguntas & Respuestas</a></li>
-						<li><a href="#">Licencia de la compañía</a></li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="col-lg-3 col-md-6 col-sm-6">
-				<div class="widget widget-contact mb-5 mb-lg-0">
-					<h4 class="text-capitalize mb-3">Contáctenos</h4>
-					<div class="divider mb-4"></div>
-
-					<div class="footer-contact-block mb-4">
-						<div class="icon d-flex align-items-center">
-							<i class="icofont-email mr-3"></i>
-							<span class="h6 mb-0">Apoyo disponible las 24/7</span>
-						</div>
-						<h4 class="mt-2"><a href="tel:+23-345-67890">Contáctenos@email.com</a></h4>
-					</div>
-
-					<div class="footer-contact-block">
-						<div class="icon d-flex align-items-center">
-							<i class="icofont-support mr-3"></i>
-							<span class="h6 mb-0">Lun a Vie : 08:30 - 18:00</span>
-						</div>
-						<h4 class="mt-2"><a href="tel:+23-345-67890">555 - 5555</a></h4>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="footer-btm py-4 mt-5">
-			<div class="row align-items-center justify-content-between">
-				<div class="col-lg-6">
-					<div class="copyright">
-						&copy; Copyright Reserved to <span class="text-color">G3</span>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="subscribe-form text-lg-right mt-5 mt-lg-0">
-						<form action="#" class="subscribe">
-							<input type="text" class="form-control" placeholder="Tu dirección de correo">
-							<a href="#" class="btn btn-main-2 btn-round-full">Suscribirse</a>
-						</form>
-					</div>
-				</div>
-			</div>
-
+		<div class="container">
 			<div class="row">
-				<div class="col-lg-4">
-					<a class="backtop js-scroll-trigger" href="#top">
-						<i class="icofont-long-arrow-up"></i>
-					</a>
+				<div class="col-lg-4 mr-auto col-sm-6">
+					<div class="widget mb-5 mb-lg-0">
+						<div class="logo mb-4">
+							<img widht="200px" src="logo color/logo_large.png" alt="" class="img-fluid">
+						</div>
+						<p>Plataforma en línea puesta a disposición de los asegurados del Hospital San Juan.</p>
+
+						<ul class="list-inline footer-socials mt-4">
+							<li class="list-inline-item"><a href="https://www.facebook.com/"><i class="icofont-facebook"></i></a></li>
+							<li class="list-inline-item"><a href="https://twitter.com/"><i class="icofont-twitter"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.pinterest.com/"><i class="icofont-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-2 col-md-6 col-sm-6">
+					<div class="widget mb-5 mb-lg-0">
+						<h4 class="text-capitalize mb-3">Departmentos</h4>
+						<div class="divider mb-4"></div>
+
+						<ul class="list-unstyled footer-menu lh-35">
+							<li><a href="medicina-general.php">Medicina General</a></li>
+							<li><a href="cardiologia.php">Cardiología</a></li>
+							<li><a href="neurologia.php">Neurología</a></li>
+							<li><a href="pediatria.php">Pediatría</a></li>
+							<li><a href="dermatologia.php">Dermatología</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-2 col-md-6 col-sm-6">
+					<div class="widget mb-5 mb-lg-0">
+						<h4 class="text-capitalize mb-3">Nosotros</h4>
+						<div class="divider mb-4"></div>
+
+						<ul class="list-unstyled footer-menu lh-35">
+							<li><a href="#">Términos & Condiciones</a></li>
+							<li><a href="#">Política de Privacidad</a></li>
+							<li><a href="#">Apoyo de la Compañía </a></li>
+							<li><a href="#">Preguntas & Respuestas</a></li>
+							<li><a href="#">Licencia de la compañía</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="widget widget-contact mb-5 mb-lg-0">
+						<h4 class="text-capitalize mb-3">Contáctenos</h4>
+						<div class="divider mb-4"></div>
+
+						<div class="footer-contact-block mb-4">
+							<div class="icon d-flex align-items-center">
+								<i class="icofont-email mr-3"></i>
+								<span class="h6 mb-0">Apoyo disponible las 24/7</span>
+							</div>
+							<h4 class="mt-2"><a href="tel:+23-345-67890">Contáctenos@email.com</a></h4>
+						</div>
+
+						<div class="footer-contact-block">
+							<div class="icon d-flex align-items-center">
+								<i class="icofont-support mr-3"></i>
+								<span class="h6 mb-0">Lun a Vie : 08:30 - 18:00</span>
+							</div>
+							<h4 class="mt-2"><a href="tel:+23-345-67890">555 - 5555</a></h4>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-btm py-4 mt-5">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-lg-6">
+						<div class="copyright">
+							&copy; Copyright Reserved to <span class="text-color">G3</span>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="subscribe-form text-lg-right mt-5 mt-lg-0">
+							<form action="#" class="subscribe">
+								<input type="text" class="form-control" placeholder="Tu dirección de correo">
+								<a href="#" class="btn btn-main-2 btn-round-full">Suscribirse</a>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-4">
+						<a class="backtop js-scroll-trigger" href="#top">
+							<i class="icofont-long-arrow-up"></i>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</footer>
+	</footer>
 
 
 
