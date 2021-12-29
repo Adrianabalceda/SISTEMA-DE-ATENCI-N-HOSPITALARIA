@@ -92,7 +92,7 @@
                                     <div class="d-flex w-100 justify-content-between align-items-center">
                                         <div>
                                             <p class="fw-bold mb-0">MODIFICAR USUARIO</p>
-                                            <p class="text-secondary fs-6">Modificarun usuario existente</p>
+                                            <p class="text-secondary fs-6">Modificar un usuario existente</p>
                                         </div>
                                         <div class="pe-3 d-none arrow">
                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
