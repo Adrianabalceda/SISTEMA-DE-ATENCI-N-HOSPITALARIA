@@ -149,7 +149,7 @@
                 <div class="section-title text-center">
                     <h2 class="text-md mb-2">Contáctenos</h2>
                     <div class="divider mx-auto my-4"></div>
-                    <p class="mb-5">Laboriosam exercitationem molestias beatae eos pariatur, similique, excepturi mollitia sit perferendis maiores ratione aliquam?</p>
+                    <p class="mb-5"></p>
                 </div>
             </div>
         </div>
@@ -160,7 +160,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="alert alert-success contact__msg" style="display: none" role="alert">
-                                Su mensaje fue enviado con éxito!!
+                                ¡Su mensaje fue enviado con éxito!
                             </div>
                         </div>
                     </div>

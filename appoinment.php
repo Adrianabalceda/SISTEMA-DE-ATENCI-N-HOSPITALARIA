@@ -179,7 +179,7 @@
 								<textarea name="message" id="message" class="form-control" rows="6" placeholder="Tu Mensaje"></textarea>
 							</div>
 
-							<a class="btn btn-main btn-round-full" href="confirmation.html">Haga una cita<i class="icofont-simple-right ml-2"></i></a>
+							<a class="btn btn-main btn-round-full" href="">Haga una cita<i class="icofont-simple-right ml-2"></i></a>
 						</form>
 					</div>
 				</div>

@@ -234,7 +234,7 @@
 				<div class="cta-content">
 					<div class="divider mb-4"></div>
 					<h2 class="mb-5 text-lg">Nos complace ofrecerle la oportunidad de tener buena salud</span></h2>
-					<a href="appoinment.html" class="btn btn-main-2 btn-round-full">Conseguir cita <i class="icofont-simple-right  ml-2"></i></a>
+					<a href="appoinment.php" class="btn btn-main-2 btn-round-full">Conseguir cita <i class="icofont-simple-right  ml-2"></i></a>
 				</div>
 			</div>
 		</div>

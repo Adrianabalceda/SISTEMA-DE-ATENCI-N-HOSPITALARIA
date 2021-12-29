@@ -175,7 +175,7 @@
 					<h2 class="title-color">Salud personal <br>& vida saludable</h2>
 					<p class="mt-4 mb-5">Proveemos el mejor servicio de Lima metropolitana con atención las 24 / 7 y los mejores médicos.</p>
 
-					<a href="service.html" class="btn btn-main-2 btn-round-full btn-icon">Servicios<i class="icofont-simple-right ml-3"></i></a>
+					<a href="service.php" class="btn btn-main-2 btn-round-full btn-icon">Servicios<i class="icofont-simple-right ml-3"></i></a>
 				</div>
 			</div>
 		</div>
