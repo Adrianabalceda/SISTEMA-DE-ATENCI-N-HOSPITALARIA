@@ -67,11 +67,11 @@
 			    <li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="department.html" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Deparmentos <i class="icofont-thin-down"></i></a>
 					<ul class="dropdown-menu" aria-labelledby="dropdown02">
-						<li><a class="dropdown-item" href="department.html">Medicina General</a></li>
-						<li><a class="dropdown-item" href="department-single.html">Cardiología</a></li>
-						<li><a class="dropdown-item" href="department-single.html">Neurología</a></li>
-						<li><a class="dropdown-item" href="department-single.html">Pediatría</a></li>
-						<li><a class="dropdown-item" href="dermatologia.php">Dermatología</a></li>
+						<li><a class="dropdown-item" href="medicina-general.html">Medicina General</a></li>
+						<li><a class="dropdown-item" href="cardiologia.html">Cardiología</a></li>
+						<li><a class="dropdown-item" href="neurologia.html">Neurología</a></li>
+						<li><a class="dropdown-item" href="pediatria.html">Pediatría</a></li>
+						<li><a class="dropdown-item" href="dermatologia.html">Dermatología</a></li>
 					</ul>
 			  	</li>
 
