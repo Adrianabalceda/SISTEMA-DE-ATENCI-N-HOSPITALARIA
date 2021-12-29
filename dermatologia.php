@@ -80,7 +80,6 @@
 							<a class="nav-link dropdown-toggle" href="blog-sidebar.html" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Doctores <i class="icofont-thin-down"></i></a>
 							<ul class="dropdown-menu" aria-labelledby="dropdown03">
 								<li><a class="dropdown-item" href="doctor.html">Directivos</a></li>
-								<li><a class="dropdown-item" href="doctor-single.html">Doctor Individual</a></li>
 								<li><a class="dropdown-item" href="appoinment.html">Cita</a></li>
 							</ul>
 						</li>
