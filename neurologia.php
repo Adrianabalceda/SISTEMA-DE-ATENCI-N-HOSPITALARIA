@@ -71,7 +71,6 @@
 						<a class="nav-link dropdown-toggle" href="doctor.html" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Doctores <i class="icofont-thin-down"></i></a>
 						<ul class="dropdown-menu" aria-labelledby="dropdown03">
 							<li><a class="dropdown-item" href="doctor.html">Directivos</a></li>
-							<li><a class="dropdown-item" href="doctor-single.html">Doctor Individual</a></li>
 							<li><a class="dropdown-item" href="appoinment.html">Cita</a></li>
 						</ul>
 					  </li>
@@ -168,18 +167,17 @@
 			    <li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="department.html" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Deparmentos <i class="icofont-thin-down"></i></a>
 					<ul class="dropdown-menu" aria-labelledby="dropdown02">
-						<li><a class="dropdown-item" href="department.html">Medicina General</a></li>
-						<li><a class="dropdown-item" href="department-single.html">Cardiología</a></li>
-						<li><a class="dropdown-item" href="department-single.html">Neurología</a></li>
-						<li><a class="dropdown-item" href="department-single.html">Pediatría</a></li>
-						<li><a class="dropdown-item" href="department-single.html">Dermatología</a></li>
+						<li><a class="dropdown-item" href="medicina-general.html">Medicina General</a></li>
+						<li><a class="dropdown-item" href="cardiologia.html">Cardiología</a></li>
+						<li><a class="dropdown-item" href="neurologia.html">Neurología</a></li>
+						<li><a class="dropdown-item" href="pediatria.html">Pediatría</a></li>
+						<li><a class="dropdown-item" href="dermatologia.html">Dermatología</a></li>
 					</ul>
 			  	</li>
 			  	<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="doctor.html" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Doctores <i class="icofont-thin-down"></i></a>
 					<ul class="dropdown-menu" aria-labelledby="dropdown03">
 						<li><a class="dropdown-item" href="doctor.html">Directivos</a></li>
-						<li><a class="dropdown-item" href="doctor-single.html">Doctor Individual</a></li>
 						<li><a class="dropdown-item" href="appoinment.html">Cita</a></li>
 					</ul>
 			  	</li>
@@ -219,7 +217,7 @@
 
 					<div class="sidebar-contatct-info mt-4">
 						<p class="mb-0">¿Necesita ayuda urgente?</p>
-						<h3>987654321</h3>
+						<h3>555 - 5555</h3>
 					</div>
 				</div>
 			</div>

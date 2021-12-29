@@ -71,7 +71,6 @@
 						<a class="nav-link dropdown-toggle" href="doctor.html" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Doctores <i class="icofont-thin-down"></i></a>
 						<ul class="dropdown-menu" aria-labelledby="dropdown03">
 							<li><a class="dropdown-item" href="doctor.html">Directivos</a></li>
-							<li><a class="dropdown-item" href="doctor-single.html">Doctor Individual</a></li>
 							<li><a class="dropdown-item" href="appoinment.html">Cita</a></li>
 						</ul>
 					  </li>
@@ -164,7 +163,7 @@
 
 					<div class="sidebar-contatct-info mt-4">
 						<p class="mb-0">¿Necesita ayuda urgente?</p>
-						<h3>987654321</h3>
+						<h3>555 - 5555</h3>
 					</div>
 				</div>
 			</div>
