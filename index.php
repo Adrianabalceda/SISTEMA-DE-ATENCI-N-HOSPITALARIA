@@ -62,10 +62,10 @@
 				<a class="nav-link" href="index.php">Inicio</a>
 			  </li>
 			   <li class="nav-item"><a class="nav-link" href="nosotros.php">Sobre nosotros</a></li>
-			    <li class="nav-item"><a class="nav-link" href="service.php">Especialidades</a></li>
+			    <li class="nav-item"><a class="nav-link" href="especialidades.php">Especialidades</a></li>
 
 			    <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="department.php" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Deparmentos <i class="icofont-thin-down"></i></a>
+					<a class="nav-link dropdown-toggle" href="" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Deparmentos <i class="icofont-thin-down"></i></a>
 					<ul class="dropdown-menu" aria-labelledby="dropdown02">
 						<li><a class="dropdown-item" href="medicina-general.php">Medicina General</a></li>
 						<li><a class="dropdown-item" href="cardiologia.php">Cardiología</a></li>
@@ -76,21 +76,21 @@
 			  	</li>
 
 			  	<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="doctor.html" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Doctores <i class="icofont-thin-down"></i></a>
+					<a class="nav-link dropdown-toggle" href="doctor.php" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Doctores <i class="icofont-thin-down"></i></a>
 					<ul class="dropdown-menu" aria-labelledby="dropdown03">
-						<li><a class="dropdown-item" href="doctor.html">Directivos</a></li>
-						<li><a class="dropdown-item" href="appoinment.html">Cita</a></li>
+						<li><a class="dropdown-item" href="doctor.php">Directivos</a></li>
+						<li><a class="dropdown-item" href="appoinment.php">Cita</a></li>
 					</ul>
 			  	</li>
 
 		
-			   <li class="nav-item"><a class="nav-link" href="contact.html">Contáctanos</a></li>
+			   <li class="nav-item"><a class="nav-link" href="contactanos.php">Contáctanos</a></li>
 			</ul>
 		  </div>
 		</div>
 	</nav>
 </header>
-	
+
 
 
 
@@ -301,10 +301,10 @@
 					<div class="divider mb-4"></div>
 
 					<ul class="list-unstyled footer-menu lh-35">
-						<li><a href="#">Medicina General</a></li>
-						<li><a href="#">Cardiología</a></li>
-						<li><a href="#">Neurología</a></li>
-						<li><a href="#">Pediatría</a></li>
+						<li><a href="medicina-general.php">Medicina General</a></li>
+						<li><a href="/cardiologia.php">Cardiología</a></li>
+						<li><a href="/neurologia.php">Neurología</a></li>
+						<li><a href="/pediatria.php">Pediatría</a></li>
 						<li><a href="dermatologia.php">Dermatología</a></li>
 					</ul>
 				</div>
