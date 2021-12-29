@@ -6,7 +6,6 @@
     $email = $_POST['email'];
     $dni = $_POST['dni'];
     $especialidad_id = $_POST['especialidad'];
-
     $doctor_id = stripcslashes($dni);
     $usuario = strtoupper($nombres.' '.$apellidos);
    
@@ -35,14 +34,9 @@
     $sql = "SELECT * FROM `doctor` WHERE id = '$doctor_id'";
     $result = mysqli_query($conexion, $sql);
     $count2 = mysqli_num_rows($result);
-
-    $sql = "SELECT * FROM `asegurado` WHERE id = '$doctor_id'";
-    $result = mysqli_query($conexion, $sql);
-    $count3 = mysqli_num_rows($result);
-
    
 
-    if($count < 1 && $count2 < 1 && $count3 < 1){
+    if($count < 1 && $count2 < 1){
         $sql = "UPDATE `doctor` SET `nombres`='$nombres',`apellidos`='$apellidos',`celular`='$celular',`email`='$email',`id_especialidad`='$especialidad_id' WHERE `id`='$doctor_id'";
         mysqli_query($conexion, $sql);
     
@@ -53,7 +47,7 @@
         if($count == 1){
             header("location: ../modificar_doctor.php?error=1");
         }
-        if($count2 == 1 || $count3 == 1){
+        if($count2 == 1){
             header("location: ../modificar_doctor.php?error=2");
         }
 
