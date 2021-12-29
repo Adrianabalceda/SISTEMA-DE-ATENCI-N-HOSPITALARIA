@@ -17,12 +17,12 @@
     $result = mysqli_query($conexion, $sql);
     $count2 = mysqli_num_rows($result);
 
+  
+
     
 
     if($count !== 1 && $count2 !== 1) {
-        
-        $sql = "INSERT INTO `asegurado` (`dni`, `usuario`, `contrasenia`, `nombres`, `apellidos`, `email`, `celular`,'fecha_nac') 
-        VALUES ('$dniAsegurado', '$dniAsegurado','$dniAsegurado','$nombresAsegurado', '$apellidosAsegurado', '$emailAsegurado', '$celularAsegurado','$fechaAsegurado')";
+        $sql = "UPDATE `asegurado` SET `nombres`='$nombresPadre',`apellidos`='$apellidosPadre',`celular`='$celularPadre',`email`='$emailPadre',`fecha_nacimiento`='$fechaAsegurado' WHERE `dni`='$dniAsegurado'";
         var_dump($sql);
         mysqli_query($conexion, $sql);
 

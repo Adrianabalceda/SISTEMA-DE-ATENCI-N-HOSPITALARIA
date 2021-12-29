@@ -43,9 +43,7 @@
    
 
     if($count < 1 && $count2 < 1 && $count3 < 1){
-        $sql = "INSERT INTO `doctor` (`id`, `usuario`, `contraseña`, `nombres`, 
-        `apellidos`, `id_especialidad`, `email`, `celular`) 
-        VALUES ('$doctor_id','$usuario','$doctor_id','$nombres','$apellidos','$especialidad_id','$email','$celular')";
+        $sql = "UPDATE `doctor` SET `nombres`='$nombres',`apellidos`='$apellidos',`celular`='$celular',`email`='$email',`id_especialidad`='$especialidad_id' WHERE `id`='$doctor_id'";
         mysqli_query($conexion, $sql);
     
         //var_dump($sql);
