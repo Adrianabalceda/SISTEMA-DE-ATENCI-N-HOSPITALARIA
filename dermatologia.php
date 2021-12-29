@@ -6,7 +6,7 @@
 	<meta name="description" content="Orbitor,business,company,agency,modern,bootstrap4,tech,software">
 	<meta name="author" content="themefisher.com">
 
-	<title>Sobre Nosotros</title>
+	<title>Dermatología</title>
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
@@ -99,166 +99,83 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="block text-center">
-						<span class="text-white">Sobre Nosotros</span>
-						<h1 class="text-capitalize mb-5 text-lg">MediFind</h1>
+						<h1 class="text-capitalize mb-5 text-lg">Dermatología</h1>
+
+						<!-- <ul class="list-inline breadcumb-nav">
+            <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+            <li class="list-inline-item"><span class="text-white">/</span></li>
+            <li class="list-inline-item"><a href="#" class="text-white-50">Department Details</a></li>
+          </ul> -->
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="section about-page">
+
+	<section class="section department-single">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4">
-					<h2 class="title-color">Servicio de salud para ti y los que más amas</h2>
+				<div class="col-lg-12">
+					<div class="department-img">
+						<img width="1200px" height="600px" src="images/dermatologia.jpg" alt="dermatología_imagen" class="img-fluid">
+					</div>
 				</div>
+			</div>
+
+			<div class="row">
 				<div class="col-lg-8">
-					<p>Servicio integral para ti y tus familiares las 24 / 7 con los mejores doctores, la mejor atención y múltiples servicios todo desde la comodidad de tu computador.</p>
-					<img src="images/about/sign.png" alt="" class="img-fluid">
-				</div>
-			</div>
-		</div>
-	</section>
+					<div class="department-content mt-5">
+						<h3 class="text-md">Dermatología</h3>
+						<div class="divider my-4"></div>
+						<p class="lead">
+							Se centra en el diagnóstico, tratamiento y prevención de las enfermedades de la
+							piel, el cabello y las uñas. Contamos con los procedimientos clínicos más
+							innovadores, que te permitirán solucionar los problemas más complicados
+							relacionados al tratamiento de la piel.
+						</p>
 
-	<section class="fetaure-page ">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-6">
-					<div class="about-block-item mb-5 mb-lg-0">
-						<img src="images/about/about-1.jpg" alt="" class="img-fluid w-100">
-						<h4 class="mt-3">Pediatría</h4>
-						<p>La mejor atención para los que más amas.</p>
+
+						<h3 class="mt-5 mb-4">Tratamos: </h3>
+						<div class="divider my-4"></div>
+						<ul class="list-unstyled department-service">
+							<li><i class="icofont-check mr-2"></i>Infecciones de la piel</li>
+							<li><i class="icofont-check mr-2"></i>Infecciones específicas</li>
+							<li><i class="icofont-check mr-2"></i>Trastornos bullosos</li>
+							<li><i class="icofont-check mr-2"></i>Dermatitis y eccema</li>
+							<li><i class="icofont-check mr-2"></i>Trastornos papuloescamosos</li>
+							<li><i class="icofont-check mr-2"></i>Urticaria y eritema</li>
+						</ul>
+
+						<a href="appoinment.html" class="btn btn-main-2 btn-round-full">Reservar una Cita<i class="icofont-simple-right ml-2  "></i></a>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="about-block-item mb-5 mb-lg-0">
-						<img src="images/about/about-2.jpg" alt="" class="img-fluid w-100">
-						<h4 class="mt-3">Consejería Médica</h4>
-						<p>Comuníquese con su doctor personal en cualquier momento y en cualquier emergencia.</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="about-block-item mb-5 mb-lg-0">
-						<img src="images/about/about-3.jpg" alt="" class="img-fluid w-100">
-						<h4 class="mt-3">Neurocirugía</h4>
-						<p>Los mejores cirujanos y el mejor cuidado.</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="about-block-item">
-						<img src="images/about/about-4.jpg" alt="" class="img-fluid w-100">
-						<h4 class="mt-3">Doctores Calificados</h4>
-						<p>Los mejores doctores para resolver todas sus dudas.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section awards">
-		<div class="container">
-			<div class="row align-items-center">
+
 				<div class="col-lg-4">
-					<h2 class="title-color">Las calificaciones de nuestros doctores</h2>
-					<div class="divider mt-4 mb-5 mb-lg-0"></div>
-				</div>
-				<div class="col-lg-8">
-					<div class="row">
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="award-img">
-								<img src="images/about/3.png" alt="" class="img-fluid">
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="award-img">
-								<img src="images/about/4.png" alt="" class="img-fluid">
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="award-img">
-								<img src="images/about/1.png" alt="" class="img-fluid">
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="award-img">
-								<img src="images/about/2.png" alt="" class="img-fluid">
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="award-img">
-								<img src="images/about/5.png" alt="" class="img-fluid">
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="award-img">
-								<img src="images/about/6.png" alt="" class="img-fluid">
-							</div>
+					<div class="sidebar-widget schedule-widget mt-5">
+						<h5 class="mb-4">Horario</h5>
+
+						<ul class="list-unstyled">
+							<li class="d-flex justify-content-between align-items-center">Lunes - Viernes
+								<span>9:00 - 17:00</span>
+							</li>
+							<li class="d-flex justify-content-between align-items-center">Sábado
+								<span>9:00 - 16:00</span>
+							</li>
+							<li class="d-flex justify-content-between align-items-center">Domingo
+								<span>Cerrado</span>
+							</li>
+						</ul>
+
+						<div class="sidebar-contatct-info mt-4">
+							<p class="mb-0">¿Necesita atención urgente?</p>
+							<h3>555 - 5555</h3>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-
-	<section class="section team">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="section-title text-center">
-						<h2 class="mb-4">Conoce nuestros especialistas</h2>
-						<div class="divider mx-auto my-4"></div>
-						<p>Los doctores mejores calificados para usted y su familia, con la mejor atención y el mejor servicio las 24 / 7.</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-lg-3 col-md-6 col-sm-6">
-					<div class="team-block mb-5 mb-lg-0">
-						<img src="images/team/1.jpg" alt="" class="img-fluid w-100">
-
-						<div class="content">
-							<h4 class="mt-4 mb-0">John Marshal</h4>
-							<p>Médico de Emergencia</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-md-6 col-sm-6">
-					<div class="team-block mb-5 mb-lg-0">
-						<img src="images/team/2.jpg" alt="" class="img-fluid w-100">
-
-						<div class="content">
-							<h4 class="mt-4 mb-0">Marshal Root</h4>
-							<p>Cirujana Cardióloga</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-md-6 col-sm-6">
-					<div class="team-block mb-5 mb-lg-0">
-						<img src="images/team/3.jpg" alt="" class="img-fluid w-100">
-
-						<div class="content">
-							<h4 class="mt-4 mb-0">Siamon john</h4>
-							<p>Médico General</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6">
-					<div class="team-block">
-						<img src="images/team/4.jpg" alt="" class="img-fluid w-100">
-
-						<div class="content">
-							<h4 class="mt-4 mb-0">Rishat Ahmed</h4>
-							<p>Cirujano Ortopédico</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
 
 	<!-- footer Start -->
 	<footer class="footer section gray-bg">
@@ -360,7 +277,6 @@
 			</div>
 		</div>
 	</footer>
-
 
 
 	<!-- 
