@@ -104,12 +104,12 @@
                                 <div class="input-group-prepend" style="height: 80px;">
                                   <span class="input-group-text" style="height: 80%;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Flag_of_Peru_%28state%29.svg/270px-Flag_of_Peru_%28state%29.svg.png" alt="" style="height: 20px; width: 30px; margin-right: 4px;"/>+51</span>
                                 </div>
-                                <input type="tel" class="form-control" placeholder="999-999-999"   pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" name="celularPadre" id="celularPadre" required />
+                                <input type="tel" class="form-control" placeholder="999-999-999"   pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" name="celularAsegurado" id="celularAsegurado" required />
                             </div>
                         </div>
                         <div class="mb-1">
                             <p class="label-color mb-1">Correo electronico*</p>
-                            <input type="email" class="form-control" placeholder="Correo" name="emailPadre" id="emailPadre" required/>
+                            <input type="email" class="form-control" placeholder="Correo" name="emailAsegurado" id="emailAsegurado" required/>
                         </div>
                         <div class="mb-1">
                             <p class="label-color mb-1">Fecha nacimiento*</p>
