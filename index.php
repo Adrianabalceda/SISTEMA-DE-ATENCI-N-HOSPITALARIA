@@ -62,16 +62,16 @@
 				<a class="nav-link" href="index.php">Inicio</a>
 			  </li>
 			   <li class="nav-item"><a class="nav-link" href="nosotros.php">Sobre nosotros</a></li>
-			    <li class="nav-item"><a class="nav-link" href="service.html">Especialidades</a></li>
+			    <li class="nav-item"><a class="nav-link" href="service.php">Especialidades</a></li>
 
 			    <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="department.html" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Deparmentos <i class="icofont-thin-down"></i></a>
+					<a class="nav-link dropdown-toggle" href="department.php" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Deparmentos <i class="icofont-thin-down"></i></a>
 					<ul class="dropdown-menu" aria-labelledby="dropdown02">
-						<li><a class="dropdown-item" href="medicina-general.html">Medicina General</a></li>
-						<li><a class="dropdown-item" href="cardiologia.html">Cardiología</a></li>
-						<li><a class="dropdown-item" href="neurologia.html">Neurología</a></li>
-						<li><a class="dropdown-item" href="pediatria.html">Pediatría</a></li>
-						<li><a class="dropdown-item" href="dermatologia.html">Dermatología</a></li>
+						<li><a class="dropdown-item" href="medicina-general.php">Medicina General</a></li>
+						<li><a class="dropdown-item" href="cardiologia.php">Cardiología</a></li>
+						<li><a class="dropdown-item" href="neurologia.php">Neurología</a></li>
+						<li><a class="dropdown-item" href="pediatria.php">Pediatría</a></li>
+						<li><a class="dropdown-item" href="dermatologia.php">Dermatología</a></li>
 					</ul>
 			  	</li>
 

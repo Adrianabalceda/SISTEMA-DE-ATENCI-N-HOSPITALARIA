@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="es">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="description" content="Orbitor,business,company,agency,modern,bootstrap4,tech,software">
   <meta name="author" content="themefisher.com">
 
-  <title>Novena- Health & Care Medical template</title>
+  <title>Cardiología</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
@@ -26,10 +26,30 @@
 <body id="to">
 
 <header>
+	<div class="header-top-bar">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6">
+					<ul class="top-bar-info list-inline-item pl-0 mb-0">
+						<li class="list-inline-item"><a href="mailto:support@gmail.com"><i class="icofont-support-faq mr-2"></i>plat_online@medifind.com</a></li>
+						<li class="list-inline-item"><i class="icofont-location-pin mr-2"></i>Av. Canto Grande, San Juan de Lurigancho</li>
+					</ul>
+				</div>
+				<div class="col-lg-6">
+					<div class="text-lg-right top-right-bar mt-2 mt-lg-0">
+						<a href="tel:+23-345-67890" >
+							<span>Llámanos : </span>
+							<span class="h4">555 - 5555</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<nav class="navbar navbar-expand-lg navigation" id="navbar">
 		<div class="container">
 		 	 <a class="navbar-brand" href="index.php">
-				<img width="180px" height="60px" src="images/logo_large.png" alt="" class="img-fluid">
+			  	<img  width="180px" height="60px"src="logo color/logo_large.png" alt="" class="img-fluid">
 			  </a>
 
 		  	<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarmain" aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,29 +61,36 @@
 			  <li class="nav-item active">
 				<a class="nav-link" href="index.php">Inicio</a>
 			  </li>
-			   <li class="nav-item"><a class="nav-link" href="nosotros.php">Sobre Nosotros</a></li>
-			    <li class="nav-item"><a class="nav-link" href="especialidades.php">Especialidades</a></li>
+			   <li class="nav-item"><a class="nav-link" href="nosotros.php">Sobre nosotros</a></li>
+			    <li class="nav-item"><a class="nav-link" href="service.php">Especialidades</a></li>
 
 			    <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="department.php" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Departamentos <i class="icofont-thin-down"></i></a>
+					<a class="nav-link dropdown-toggle" href="department.php" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Deparmentos <i class="icofont-thin-down"></i></a>
 					<ul class="dropdown-menu" aria-labelledby="dropdown02">
+						<li><a class="dropdown-item" href="medicina-general.php">Medicina General</a></li>
 						<li><a class="dropdown-item" href="cardiologia.php">Cardiología</a></li>
+						<li><a class="dropdown-item" href="neurologia.php">Neurología</a></li>
+						<li><a class="dropdown-item" href="pediatria.php">Pediatría</a></li>
+						<li><a class="dropdown-item" href="dermatologia.php">Dermatología</a></li>
 					</ul>
 			  	</li>
 
 			  	<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="doctor.php" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Doctores <i class="icofont-thin-down"></i></a>
+					<a class="nav-link dropdown-toggle" href="doctor.html" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Doctores <i class="icofont-thin-down"></i></a>
 					<ul class="dropdown-menu" aria-labelledby="dropdown03">
-						<li><a class="dropdown-item" href="doctor.php">Directivos</a></li>
-						<li><a class="dropdown-item" href="appoinment.php">Citas</a></li>
+						<li><a class="dropdown-item" href="doctor.html">Directivos</a></li>
+						<li><a class="dropdown-item" href="appoinment.html">Cita</a></li>
 					</ul>
 			  	</li>
-			   <li class="nav-item"><a class="nav-link" href="contactanos.php">Contáctanos</a></li>
+
+		
+			   <li class="nav-item"><a class="nav-link" href="contact.html">Contáctanos</a></li>
 			</ul>
 		  </div>
 		</div>
 	</nav>
 </header>
+	
 <section class="page-title bg-1">
   <div class="overlay"></div>
   <div class="container">
