@@ -1,7 +1,7 @@
 <?php
             session_start();
 
-            if(!isset($_SESSION['datos_usuario']) || !$_SESSION['role']=='doctor') {
+            if(!isset($_SESSION['datos_usuario']) || !$_SESSION['role']=='asegurado') {
                 header("Location: ../../login.php");
             }
         
@@ -27,8 +27,8 @@
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="vendors/styles/core.css">
 	<link rel="stylesheet" type="text/css" href="vendors/styles/icon-font.min.css">
-	<link rel="stylesheet" type="text/css" href="src/plugins/fullcalendar/fullcalendar.css">
 	<link rel="stylesheet" type="text/css" href="vendors/styles/style.css">
+
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>
@@ -41,7 +41,7 @@
 	</script>
 </head>
 <body>
-	<?php include '../src/Doctor.php';?>
+<?php include '../src/Doctor.php';?>
 	<div class="header">
 		<div class="header-left">
 			<div class="menu-icon dw dw-menu"></div>
@@ -50,6 +50,7 @@
 		</div>
 		<div class="header-right">
 			
+		
 			<div class="user-notification">
 				<div class="dropdown">
 					<a class="dropdown-toggle no-arrow" href="#" role="button" data-toggle="dropdown">
@@ -68,25 +69,25 @@
 																		 ?>
 						<ul>
 
-								<li>
-									<a href="#">
+<li>
+	<a href="#">
 
-										<img src="https://thumbs.dreamstime.com/b/icono-p%C3%BArpura-fino-del-usuario-muestra-linear-de-la-pendiente-136856587.jpg" alt="">
-										<h3><?php echo $doctor['nombres'];
-										echo " "; 
-										echo $doctor['apellidos'];
-										$cons = "SELECT nombre FROM especialidad WHERE id_especialidad = ".$doctor['id_especialidad']."";
-										$f = mysqli_query($conexion, $cons);
-										
-										$especialidad = mysqli_fetch_array($f);
-										?></h3>
-										<p><?php echo $especialidad['nombre'];
-										?></p>
-									</a>
-								</li>
-								
-							</ul>
-							<?php }?>
+		<img src="https://thumbs.dreamstime.com/b/icono-p%C3%BArpura-fino-del-usuario-muestra-linear-de-la-pendiente-136856587.jpg" alt="">
+		<h3><?php echo $doctor['nombres'];
+		echo " "; 
+		echo $doctor['apellidos'];
+		$cons = "SELECT nombre FROM especialidad WHERE id_especialidad = ".$doctor['id_especialidad']."";
+		$f = mysqli_query($conexion, $cons);
+		
+		$especialidad = mysqli_fetch_array($f);
+		?></h3>
+		<p><?php echo $especialidad['nombre'];
+		?></p>
+	</a>
+</li>
+
+</ul>
+<?php }?>
 						</div>
 					</div>
 				</div>
@@ -111,80 +112,7 @@
 		</div>
 	</div>
 
-	<div class="right-sidebar">
-		<div class="sidebar-title">
-			<h3 class="weight-600 font-16 text-blue">
-				Layout Settings
-				<span class="btn-block font-weight-400 font-12">User Interface Settings</span>
-			</h3>
-			<div class="close-sidebar" data-toggle="right-sidebar-close">
-				<i class="icon-copy ion-close-round"></i>
-			</div>
-		</div>
-		<div class="right-sidebar-body customscroll">
-			<div class="right-sidebar-body-content">
-				<h4 class="weight-600 font-18 pb-10">Header Background</h4>
-				<div class="sidebar-btn-group pb-30 mb-10">
-					<a href="javascript:void(0);" class="btn btn-outline-primary header-white active">White</a>
-					<a href="javascript:void(0);" class="btn btn-outline-primary header-dark">Dark</a>
-				</div>
-
-				<h4 class="weight-600 font-18 pb-10">Sidebar Background</h4>
-				<div class="sidebar-btn-group pb-30 mb-10">
-					<a href="javascript:void(0);" class="btn btn-outline-primary sidebar-light ">White</a>
-					<a href="javascript:void(0);" class="btn btn-outline-primary sidebar-dark active">Dark</a>
-				</div>
-
-				<h4 class="weight-600 font-18 pb-10">Menu Dropdown Icon</h4>
-				<div class="sidebar-radio-group pb-10 mb-10">
-					<div class="custom-control custom-radio custom-control-inline">
-						<input type="radio" id="sidebaricon-1" name="menu-dropdown-icon" class="custom-control-input" value="icon-style-1" checked="">
-						<label class="custom-control-label" for="sidebaricon-1"><i class="fa fa-angle-down"></i></label>
-					</div>
-					<div class="custom-control custom-radio custom-control-inline">
-						<input type="radio" id="sidebaricon-2" name="menu-dropdown-icon" class="custom-control-input" value="icon-style-2">
-						<label class="custom-control-label" for="sidebaricon-2"><i class="ion-plus-round"></i></label>
-					</div>
-					<div class="custom-control custom-radio custom-control-inline">
-						<input type="radio" id="sidebaricon-3" name="menu-dropdown-icon" class="custom-control-input" value="icon-style-3">
-						<label class="custom-control-label" for="sidebaricon-3"><i class="fa fa-angle-double-right"></i></label>
-					</div>
-				</div>
-
-				<h4 class="weight-600 font-18 pb-10">Menu List Icon</h4>
-				<div class="sidebar-radio-group pb-30 mb-10">
-					<div class="custom-control custom-radio custom-control-inline">
-						<input type="radio" id="sidebariconlist-1" name="menu-list-icon" class="custom-control-input" value="icon-list-style-1" checked="">
-						<label class="custom-control-label" for="sidebariconlist-1"><i class="ion-minus-round"></i></label>
-					</div>
-					<div class="custom-control custom-radio custom-control-inline">
-						<input type="radio" id="sidebariconlist-2" name="menu-list-icon" class="custom-control-input" value="icon-list-style-2">
-						<label class="custom-control-label" for="sidebariconlist-2"><i class="fa fa-circle-o" aria-hidden="true"></i></label>
-					</div>
-					<div class="custom-control custom-radio custom-control-inline">
-						<input type="radio" id="sidebariconlist-3" name="menu-list-icon" class="custom-control-input" value="icon-list-style-3">
-						<label class="custom-control-label" for="sidebariconlist-3"><i class="dw dw-check"></i></label>
-					</div>
-					<div class="custom-control custom-radio custom-control-inline">
-						<input type="radio" id="sidebariconlist-4" name="menu-list-icon" class="custom-control-input" value="icon-list-style-4" checked="">
-						<label class="custom-control-label" for="sidebariconlist-4"><i class="icon-copy dw dw-next-2"></i></label>
-					</div>
-					<div class="custom-control custom-radio custom-control-inline">
-						<input type="radio" id="sidebariconlist-5" name="menu-list-icon" class="custom-control-input" value="icon-list-style-5">
-						<label class="custom-control-label" for="sidebariconlist-5"><i class="dw dw-fast-forward-1"></i></label>
-					</div>
-					<div class="custom-control custom-radio custom-control-inline">
-						<input type="radio" id="sidebariconlist-6" name="menu-list-icon" class="custom-control-input" value="icon-list-style-6">
-						<label class="custom-control-label" for="sidebariconlist-6"><i class="dw dw-next"></i></label>
-					</div>
-				</div>
-
-				<div class="reset-options pt-30 text-center">
-					<button class="btn btn-danger" id="reset-settings">Reset Settings</button>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 
 	<div class="left-side-bar">
 		<div class="brand-logo">
@@ -200,26 +128,26 @@
 			<div class="sidebar-menu">
 				<ul id="accordion-menu">
 					<li class="dropdown">
-						<a href="index.php" class="dropdown-toggle no-arrow">
+						<a href="#" class="dropdown-toggle no-arrow">
 							<span class="micon dw dw-house-1"></span><span class="">Inicio</span>
 						</a>
 						
 					</li>
 					<li class="dropdown">
-						<a href="javascript:;" class="dropdown-toggle no-arrow">
-							<span class="micon dw dw-edit2"></span><span class="mtext">Camillas</span>
+						<a href="internar.php" class="dropdown-toggle no-arrow">
+							<span class="micon dw dw-edit2"></span><span class="mtext">Internar</span>
 						</a>
 					
 					</li>
 					<li class="dropdown">
-						<a href="javascript:;" class="dropdown-toggle no-arrow">
-							<span class="micon dw dw-library"></span><span class="mtext">Internar</span>
+						<a href="generar_cita_paciente.php" class="dropdown-toggle no-arrow">
+							<span class="micon dw dw-library"></span><span class="mtext">Generar cita</span>
 						</a>
 					
 					</li>
 					<li>
 						<a href="calendar.php" class="dropdown-toggle no-arrow">
-							<span class="micon dw dw-calendar1"></span><span class="mtext">Calendario</span>
+							<span class="micon dw dw-calendar1"></span><span class="mtext">Camillas</span>
 						</a>
 					</li>
 					
@@ -234,15 +162,7 @@
 					<li>
 						<div class="dropdown-divider"></div>
 					</li>
-					<li>
-						<div class="sidebar-small-cap">Extra</div>
-					</li>
-					<li>
-						<a href="javascript:;" class="dropdown-toggle no-arrow">
-							<span class="micon dw dw-edit-2"></span><span class="mtext">Documentation</span>
-						</a>
-						
-					</li>
+					 
 					
 				</ul>
 			</div>
@@ -255,89 +175,64 @@
 			<div class="min-height-200px">
 				<div class="page-header">
 					<div class="row">
-						<div class="col-md-12 col-sm-12">
+						<div class="col-md-6 col-sm-12">
 							<div class="title">
-								<h4>Calendar</h4>
+								<h4>Camillas</h4>
 							</div>
 							<nav aria-label="breadcrumb" role="navigation">
 								<ol class="breadcrumb">
 									<li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
-									<li class="breadcrumb-item active" aria-current="page">Calendario</li>
+									<li class="breadcrumb-item active" aria-current="page">Doctores</li>
 								</ol>
 							</nav>
 						</div>
 					</div>
 				</div>
-				<div class="pd-20 card-box mb-30">
-					<div class="calendar-wrap">
-						<div id='calendar'></div>
-					</div>
-					<!-- calendar modal -->
-					<div id="modal-view-event" class="modal modal-top fade calendar-modal">
-						<div class="modal-dialog modal-dialog-centered">
-							<div class="modal-content">
-								<div class="modal-body">
-									<h4 class="h4"><span class="event-icon weight-400 mr-3"></span><span class="event-title"></span></h4>
-									<div class="event-body"></div>
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-								</div>
-							</div>
-						</div>
-					</div>
+				<div class="card-box mb-30">
+				<h2 class="h4 pd-20">Camillas del hospital</h2>
+				<table class="data-table table nowrap">
+					<thead>
+						<tr>
+							
+							
+						
+							<th>ID</th>
+							<th>Estado</th>
+						
+						
 
-					<div id="modal-view-event-add" class="modal modal-top fade calendar-modal">
-						<div class="modal-dialog modal-dialog-centered">
-							<div class="modal-content">
-								<form id="add-event">
-									<div class="modal-body">
-										<h4 class="text-blue h4 mb-10">Add Event Detail</h4>
-										<div class="form-group">
-											<label>Event name</label>
-											<input type="text" class="form-control" name="ename">
-										</div>
-										<div class="form-group">
-											<label>Event Date</label>
-											<input type='text' class="datetimepicker form-control" name="edate">
-										</div>
-										<div class="form-group">
-											<label>Event Description</label>
-											<textarea class="form-control" name="edesc"></textarea>
-										</div>
-										<div class="form-group">
-											<label>Event Color</label>
-											<select class="form-control" name="ecolor">
-												<option value="fc-bg-default">fc-bg-default</option>
-												<option value="fc-bg-blue">fc-bg-blue</option>
-												<option value="fc-bg-lightgreen">fc-bg-lightgreen</option>
-												<option value="fc-bg-pinkred">fc-bg-pinkred</option>
-												<option value="fc-bg-deepskyblue">fc-bg-deepskyblue</option>
-											</select>
-										</div>
-										<div class="form-group">
-											<label>Event Icon</label>
-											<select class="form-control" name="eicon">
-												<option value="circle">circle</option>
-												<option value="cog">cog</option>
-												<option value="group">group</option>
-												<option value="suitcase">suitcase</option>
-												<option value="calendar">calendar</option>
-											</select>
-										</div>
-									</div>
-									<div class="modal-footer">
-										<button type="submit" class="btn btn-primary" >Save</button>
-										<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
+							
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+						<?php
+							 $consulta = "SELECT * FROM cama ";
+							 $paci = mysqli_query($conexion, $consulta);
+							 
+							 $paciente = mysqli_fetch_array($paci);
+							 foreach ($conexion->query($consulta) as $paciente){
+						  
+																		 ?>
+							
+							<td>
+							<h5 class="font-16"><?php echo $paciente['id'];?></h5>
+							</td>
+
+							<td><?php echo $paciente['estado'];
+							
+							?></td>
+							
+						
+						</tr>
+						
+						
+					</tbody>
+					<?php }?>
+				</table>
 			</div>
 			<div class="footer-wrap pd-20 mb-20 card-box">
-				Medifind<a href="" target="_blank">G3</a>
+				Medifind <a href="" target="_blank">G3</a>
 			</div>
 		</div>
 	</div>
@@ -346,7 +241,5 @@
 	<script src="vendors/scripts/script.min.js"></script>
 	<script src="vendors/scripts/process.js"></script>
 	<script src="vendors/scripts/layout-settings.js"></script>
-	<script src="src/plugins/fullcalendar/fullcalendar.min.js"></script>
-	<script src="vendors/scripts/calendar-setting.js"></script>
 </body>
 </html>
