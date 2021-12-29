@@ -125,7 +125,7 @@
 						<span>Servicio las 24 horas</span>
 						<h4 class="mb-3">Citas Online</h4>
 						<p class="mb-4">Obtenga todo el apoyo que necesite las 24 horas del día los 7 días a las semana</p>
-						<a href="appoinment.html" class="btn btn-main btn-round-full">Registrar una cita</a>
+						<a href="appoinment.php" class="btn btn-main btn-round-full">Registrar una cita</a>
 					</div>
 				
 					<div class="feature-item mb-5 mb-lg-0">
@@ -250,10 +250,10 @@
 				<div class="service-item mb-4">
 					<div class="icon d-flex align-items-center">
 						<i class="icofont-brain-alt text-lg"></i>
-						<h4 class="mt-3 mb-3">Neurocirugía</h4>
+						<h4 class="mt-3 mb-3">Neurología</h4>
 					</div>
 					<div class="content">
-						<p class="mb-4">Los mejores cirujanos.</p>
+						<p class="mb-4">Los mejores neurólogos.</p>
 					</div>
 				</div>
 			</div>
