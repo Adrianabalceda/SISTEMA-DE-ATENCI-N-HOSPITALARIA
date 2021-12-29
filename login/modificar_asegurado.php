@@ -85,7 +85,7 @@
                 </div>
                 <div class="container ml-4 mt-2" id="containerLoginPageRight">
            
-                    <form action="src/registrar_asegurado_logic.php" method="POST" class="formulario" >
+                    <form action="src/modificar_asegurado_logic.php" method="POST" class="formulario" >
                         <div class="mb-1">
                             <p class="label-color mb-1">Nombres*</p>
                             <input type="text" class="form-control" placeholder="Nombres" name="nombresAsegurado" id="nombresAsegurado" required />

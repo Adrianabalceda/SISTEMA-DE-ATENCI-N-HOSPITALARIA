@@ -67,7 +67,7 @@
                         <div>
                             <h5 class="fw-bold fs-4" id="titleLoginPage">Modificar datos del doctor</h5>
                         </div>
-                        <form role="form" action="src/registro_doctor_logic.php" method="POST" class="formulario">
+                        <form role="form" action="src/modificar_doctor_logic.php" method="POST" class="formulario">
                             <div class="form-group">
                               <label for="full_name">Nombres:</label>
                               <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Juan carlos">
