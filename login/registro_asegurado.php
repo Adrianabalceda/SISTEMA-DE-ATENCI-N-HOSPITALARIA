@@ -85,7 +85,7 @@
                 </div>
                 <div class="container ml-4 mt-2" id="containerLoginPageRight">
            
-                    <form action="src/registrar_asegurado_login.php" method="POST" class="formulario" >
+                    <form action="src/registrar_asegurado_logic.php" method="POST" class="formulario" >
                         <div class="mb-1">
                             <p class="label-color mb-1">Nombres*</p>
                             <input type="text" class="form-control" placeholder="Nombres" name="nombresAsegurado" id="nombresAsegurado" required />
@@ -98,19 +98,18 @@
                             <p class="label-color mb-1">DNI*</p>
                             <input type="text" class="form-control" placeholder="DNI"  name = "dniAsegurado" id="dniAsegurado"/>
                         </div>
-                       
                         <div class="mb-1">
                             <p class="label-color mb-1">Celular*</p>
                             <div class="input-group">
                                 <div class="input-group-prepend" style="height: 80px;">
                                   <span class="input-group-text" style="height: 80%;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Flag_of_Peru_%28state%29.svg/270px-Flag_of_Peru_%28state%29.svg.png" alt="" style="height: 20px; width: 30px; margin-right: 4px;"/>+51</span>
                                 </div>
-                                <input type="tel" class="form-control" placeholder="999-999-999"   pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" name="celularAsegurado" id="celularAsegurado" required />
+                                <input type="tel" class="form-control" placeholder="999-999-999"   pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" name="celularPadre" id="celularPadre" required />
                             </div>
                         </div>
                         <div class="mb-1">
-                            <p class="label-color mb-1">Correo electrónico*</p>
-                            <input type="email" class="form-control" placeholder="Correo" name="emailAsegurado" id="emailAsegurado" required/>
+                            <p class="label-color mb-1">Correo electronico*</p>
+                            <input type="email" class="form-control" placeholder="Correo" name="emailPadre" id="emailPadre" required/>
                         </div>
                         <div class="mb-1">
                             <p class="label-color mb-1">Fecha nacimiento*</p>

@@ -5,7 +5,7 @@
   <meta name="description" content="Orbitor,business,company,agency,modern,bootstrap4,tech,software">
   <meta name="author" content="themefisher.com">
 
-  <title>Medifind - Sistema de atención hospitalaria</title>
+  <title>Medifind - Sistema de atención Hospitalaria</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" type="logo color/logo_small_icon_only.png" href="/images/favicon.ico" />
@@ -39,7 +39,7 @@
 					<div class="text-lg-right top-right-bar mt-2 mt-lg-0">
 						<a href="tel:+23-345-67890" >
 							<span>Llámanos : </span>
-							<span class="h4">555-5555</span>
+							<span class="h4">555 - 5555</span>
 						</a>
 					</div>
 				</div>
@@ -59,13 +59,13 @@
 		  <div class="collapse navbar-collapse" id="navbarmain">
 			<ul class="navbar-nav ml-auto">
 			  <li class="nav-item active">
-				<a class="nav-link" href="index.html">Inicio</a>
+				<a class="nav-link" href="index.php">Inicio</a>
 			  </li>
-			   <li class="nav-item"><a class="nav-link" href="about.html">Sobre nosotros</a></li>
+			   <li class="nav-item"><a class="nav-link" href="nosotros.php">Sobre nosotros</a></li>
 			    <li class="nav-item"><a class="nav-link" href="service.html">Especialidades</a></li>
 
 			    <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="department.html" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Deparmentos<i class="icofont-thin-down"></i></a>
+					<a class="nav-link dropdown-toggle" href="department.html" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Deparmentos <i class="icofont-thin-down"></i></a>
 					<ul class="dropdown-menu" aria-labelledby="dropdown02">
 						<li><a class="dropdown-item" href="department.html">Medicina General</a></li>
 						<li><a class="dropdown-item" href="department-single.html">Cardiología</a></li>
@@ -289,9 +289,9 @@
 					<p>Plataforma en línea puesta a disposición de los asegurados del Hospital San Juan.</p>
 
 					<ul class="list-inline footer-socials mt-4">
-						<li class="list-inline-item"><a href="https://www.facebook.com/themefisher"><i class="icofont-facebook"></i></a></li>
-						<li class="list-inline-item"><a href="https://twitter.com/themefisher"><i class="icofont-twitter"></i></a></li>
-						<li class="list-inline-item"><a href="https://www.pinterest.com/themefisher/"><i class="icofont-linkedin"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.facebook.com/"><i class="icofont-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="https://twitter.com/"><i class="icofont-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.pinterest.com/"><i class="icofont-linkedin"></i></a></li>
 					</ul>
 				</div>
 			</div>

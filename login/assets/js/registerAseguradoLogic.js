@@ -8,6 +8,7 @@ const celularAsegurado = document.getElementById('celularAsegurado');
 const emailAsegurado = document.getElementById('emailAsegurado');
 const fechaAsegurado = document.getElementById('fechaAsegurado');
 
+
 const form = document.querySelector('.formulario');
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -54,10 +55,9 @@ const validateForm = (e) => {
     const celularAseguradoValue = celularAsegurado.value;
     const emailAseguradoValue = emailAsegurado.value;
     const fechaAseguradoValue = fechaAsegurado.value;
-    
 
     if (nombresAseguradoValue === '' || apellidosAseguradoValue === '' || dniAseguradoValue === '' || celularAseguradoValue === '' || emailAseguradoValue ==='' 
-        || fechaAseguradoValue ==='' ) {
+        || fechaAseguradoValue =='') {
         swal.fire({
             title: 'Error',
             text: 'Debe completar todos los campos',
