@@ -48,7 +48,7 @@
 	</div>
 	<nav class="navbar navbar-expand-lg navigation" id="navbar">
 		<div class="container">
-		 	 <a class="navbar-brand" href="index.html">
+		 	 <a class="navbar-brand" href="index.php">
 			  	<img  width="180px" height="60px"src="logo color/logo_large.png" alt="" class="img-fluid">
 			  </a>
 
@@ -71,7 +71,7 @@
 						<li><a class="dropdown-item" href="department-single.html">Cardiología</a></li>
 						<li><a class="dropdown-item" href="department-single.html">Neurología</a></li>
 						<li><a class="dropdown-item" href="department-single.html">Pediatría</a></li>
-						<li><a class="dropdown-item" href="department-single.html">Dermatología</a></li>
+						<li><a class="dropdown-item" href="dermatologia.php">Dermatología</a></li>
 					</ul>
 			  	</li>
 
@@ -263,7 +263,7 @@
 				<div class="service-item mb-4">
 					<div class="icon d-flex align-items-center">
 						<i class="icofont-dna-alt-1 text-lg"></i>
-						<h4 class="mt-3 mb-3">Dermatología</h4>
+						<h4 class="mt-3 mb-3"><a href="dermatologia.php">Dermatología</a></h4>
 					</div>
 					<div class="content">
 						<p class="mb-4">Para el mejor cuidado de su piel.</p>
@@ -306,7 +306,7 @@
 						<li><a href="#">Cardiología</a></li>
 						<li><a href="#">Neurología</a></li>
 						<li><a href="#">Pediatría</a></li>
-						<li><a href="#">Dermatología</a></li>
+						<li><a href="dermatologia.php">Dermatología</a></li>
 					</ul>
 				</div>
 			</div>
