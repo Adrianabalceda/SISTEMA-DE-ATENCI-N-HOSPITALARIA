@@ -23,7 +23,7 @@
         mysqli_query($conexion, $sql);
 
 
-        header("location: ../registro_asegurado.php?mensaje=1");
+        header("location: ../modificar_asegurado.php?mensaje=1");
     }
     else{
         if($count == 1){

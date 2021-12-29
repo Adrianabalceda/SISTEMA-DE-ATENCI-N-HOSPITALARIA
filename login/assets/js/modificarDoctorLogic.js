@@ -15,9 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
         showError('Esta especialidad ya se encuentra asignada a otro doctor');
     }
 
-    if (urlParams.get('error') == '2') {
+    /* if (urlParams.get('error') == '2') {
         showError('Ya existe en el sistema un usuario con este DNI');
-    }
+    } */
 
     if (urlParams.get('mensaje') == '1') {
         showGod('El usuario fue modificado exitosamente');

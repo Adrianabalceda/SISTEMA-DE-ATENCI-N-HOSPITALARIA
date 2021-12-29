@@ -117,8 +117,8 @@
                         </div>
                         
                         <div class="mt-5">
-                            <button class="btn btn-colors d-block w-100" type="submit" id="btnRegistrar">SIGUIENTE</button>
-                        </div>
+                        <button  class = " btn btn-colors d-block w-100 " type = " submit " id="btnRegistrar"> Modificar </button>
+                    </div>
                     </form>
                 </div>
                   

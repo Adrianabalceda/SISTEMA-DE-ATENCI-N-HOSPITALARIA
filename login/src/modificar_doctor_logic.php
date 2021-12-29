@@ -47,9 +47,9 @@
         if($count == 1){
             header("location: ../modificar_doctor.php?error=1");
         }
-        if($count2 == 1){
+        /* if($count2 == 1){
             header("location: ../modificar_doctor.php?error=2");
-        }
+        } */
 
         
     }
