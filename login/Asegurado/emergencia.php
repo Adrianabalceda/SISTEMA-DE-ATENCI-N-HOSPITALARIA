@@ -74,11 +74,8 @@
 		<img src="https://thumbs.dreamstime.com/b/icono-p%C3%BArpura-fino-del-usuario-muestra-linear-de-la-pendiente-136856587.jpg" alt="">
 		<h3><?php echo $familiar['nombres'];
 		echo " "; 
-		echo $familiar['apellidos'];
+		echo $familiar['apellidos'];?></h3>
 		
-		?></h3>
-		<p><?php echo $familiar['DNI'];
-		?></p>
 	</a>
 </li>
 
@@ -154,6 +151,12 @@
 							<span class="micon dw dw-ambulance"></span><span class="mtext">Emergencia</span>
 						</a>
 					</li>
+					<<li>
+						<a href="enfermedades.php" class="dropdown-toggle no-arrow">
+							<span class="micon dw dw-hospital"></span><span class="mtext">Enfermedades</span>
+						</a>
+					</li>
+				
 				
 				
 					

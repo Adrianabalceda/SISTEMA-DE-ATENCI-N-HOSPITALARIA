@@ -103,8 +103,8 @@
 						<span class="user-name"><? echo $nombres; echo " "; echo $apellidos;?></span>
 					</a>
 					<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-						<a class="dropdown-item" href="profile.html"><i class="dw dw-user1"></i>Perfil</a>
-						<a class="dropdown-item" href="profile.html"><i class="dw dw-settings2"></i>Ajustes</a>
+						<a class="dropdown-item" href=""><i class="dw dw-user1"></i>Perfil</a>
+						<a class="dropdown-item" href=""><i class="dw dw-settings2"></i>Ajustes</a>
 						
 						<a class="dropdown-item" href="../src/cerrar_sesion.php"><i class="dw dw-logout"></i> Cerrar sesión</a>
 					</div>
@@ -189,12 +189,13 @@
 			</div>
 			
 			
-			<div class="card-box mb-30">
-				<h2 class="h4 pd-20">Pacientes a cargo</h2>
+	
+				<div class="card-box mb-30">
+				<h2 class="h4 pd-20">Pacientes asegurados a cargo</h2>
 				<table class="data-table table nowrap">
 					<thead>
 						<tr>
-							<th class="table-plus datatable-nosort">img</th>
+						<th>img</th>
 							<th>Nombres</th>
 							<th>Apellidos</th>
 							
@@ -216,18 +217,80 @@
 							<td class="table-plus">
 								<img src="https://thumbs.dreamstime.com/b/icono-p%C3%BArpura-fino-del-usuario-muestra-linear-de-la-pendiente-136856587.jpg" width="70" height="70" alt="">
 							</td>
-							<td>
-								<h5 class="font-16"><?php echo $paciente['id_asegurado'];?></h5>
-							</td>
-							<td><?php echo $paciente['id_enfermedad'];?></td>
+						
+						<?php
+								$consulta = "SELECT * FROM asegurado WHERE id = ".$paciente['id_asegurado']."";
+								$paci = mysqli_query($conexion, $consulta);
+								$paciente5 = mysqli_fetch_array($paci);?>
+							<td><?php echo $paciente5['nombres'];?></td>
+
+							<td><?php echo $paciente5['apellidos'];?></td>
+								<?php
+								$consulta = "SELECT * FROM enfermedad WHERE id= ".$paciente['id_enfermedad']."";
+								$paci = mysqli_query($conexion, $consulta);
+								$paciente5 = mysqli_fetch_array($paci);?>
+							<td><?php echo $paciente5['nombre'];?></td>
+
 							<td><?php echo $paciente['estado'];?></td>
 							<td></td>
 							
 						
 						</tr>
+
+						</tbody>
+					<?php }?>
+				</table>
+
+
+				
+				<div class="card-box mb-30">
+				<h2 class="h4 pd-20">Pacientes familiares a cargo</h2>
+				<table class="data-table table nowrap">
+					<thead>
+						<tr>
+						<th>img</th>
+							<th>Nombres</th>
+							<th>Apellidos</th>
+							
+							<th>Enfermedad</th>
+							<th>Estado</th>
+							
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+						<?php
+							 $consulta = "SELECT * FROM familiar_atender WHERE id_doctor= '$id'";
+							 $paci = mysqli_query($conexion, $consulta);
+							 
+							 $paciente = mysqli_fetch_array($paci);
+							 foreach ($conexion->query($consulta) as $paciente){
+						  
+																		 ?>
+							<td class="table-plus">
+								<img src="https://thumbs.dreamstime.com/b/icono-p%C3%BArpura-fino-del-usuario-muestra-linear-de-la-pendiente-136856587.jpg" width="70" height="70" alt="">
+							</td>
 						
+						<?php
+								$consulta = "SELECT * FROM familiar WHERE id = ".$paciente['id_familiar']."";
+								$paci = mysqli_query($conexion, $consulta);
+								$paciente5 = mysqli_fetch_array($paci);?>
+							<td><?php echo $paciente5['nombres'];?></td>
+
+							<td><?php echo $paciente5['apellidos'];?></td>
+								<?php
+								$consulta = "SELECT * FROM enfermedad WHERE id= ".$paciente['id_enfermedad']."";
+								$paci = mysqli_query($conexion, $consulta);
+								$paciente5 = mysqli_fetch_array($paci);?>
+							<td><?php echo $paciente5['nombre'];?></td>
+
+							<td><?php echo $paciente['estado'];?></td>
+							<td></td>
+							
 						
-					</tbody>
+						</tr>
+
+						</tbody>
 					<?php }?>
 				</table>
 			</div>

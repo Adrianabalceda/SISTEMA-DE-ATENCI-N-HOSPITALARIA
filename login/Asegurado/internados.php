@@ -155,6 +155,12 @@
 							<span class="micon dw dw-ambulance"></span><span class="mtext">Emergencia</span>
 						</a>
 					</li>
+					<li>
+						<a href="enfermedades.php" class="dropdown-toggle no-arrow">
+							<span class="micon dw dw-hospital"></span><span class="mtext">Enfermedades</span>
+						</a>
+					</li>
+				
 				
 				
 					

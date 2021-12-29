@@ -156,6 +156,12 @@
 							<span class="micon dw dw-ambulance"></span><span class="mtext">Emergencia</span>
 						</a>
 					</li>
+
+					<li>
+						<a href="enfermedades.php" class="dropdown-toggle no-arrow">
+							<span class="micon dw dw-hospital"></span><span class="mtext">Enfermedades</span>
+						</a>
+					</li>
 				
 				
 					
@@ -191,9 +197,11 @@
 						<th>Fecha</th>
 							<th>Hora</th>
 							<th>Nombres</th>
+							
 							<th>Apellidos</th>
-							<th>Doctor</th>
 							<th>Especialidad</th>
+							<th>Doctor</th>
+							
 							
 						</tr>
 					</thead>
@@ -213,16 +221,19 @@
 							</td>
 							<td><?php echo $paciente['hora'];?></td>
 							<td><?php echo $nombres;?></td>
-							<td><?php echo $apellidos;
-							 $consulta = "SELECT nombres,apellidos,id_especialidad FROM doctor WHERE id= ".$paciente['id_doctor']."";
+							<td><?php echo $apellidos;?></td>
+							
+							<td><?php echo $paciente['id_especialidad']; ?></td>
+							<?php
+							 $consulta = "SELECT nombres,apellidos FROM doctor WHERE id= ".$paciente['id_especialidad']."";
 							 $paci = mysqli_query($conexion, $consulta);
 							 $paciente = mysqli_fetch_array($paci);
 							
-							?></td>
+							?> </td>
 							
 							<td><?php echo $paciente['nombres']; echo ' '; echo $paciente['apellidos'];?></td>
 
-							<td><?php echo $paciente['id_especialidad']; ?></td>
+							
 							
 						
 						</tr>
@@ -273,14 +284,14 @@
 							?></td>
 							<td><?php echo $paciente5['nombres'];?></td>
 							<td><?php echo $paciente5['apellidos'];
-							 $consulta = "SELECT nombres,apellidos,id_especialidad FROM doctor WHERE id= ".$paciente['id_doctor']."";
+							 $consulta = "SELECT nombres,apellidos FROM doctor WHERE id= ".$paciente['id_especialidad']."";
 							 $paci = mysqli_query($conexion, $consulta);
 
-							 $paciente = mysqli_fetch_array($paci);
+							 $paciente4 = mysqli_fetch_array($paci);
 							
 							?></td>
 							
-							<td><?php echo $paciente['nombres']; echo ' '; echo $paciente['apellidos'];
+							<td><?php echo $paciente4['nombres']; echo ' '; echo $paciente4['apellidos'];
 							
 							
 							?></td>

@@ -1,7 +1,7 @@
 <?php
             session_start();
 
-            if(!isset($_SESSION['datos_usuario']) || !$_SESSION['role']=='asegurado') {
+            if(!isset($_SESSION['datos_usuario']) || !$_SESSION['role']=='doctor') {
                 header("Location: ../../login.php");
             }
         

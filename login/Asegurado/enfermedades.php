@@ -12,7 +12,7 @@
 <head>
 	<!-- Basic Page Info -->
 	<meta charset="utf-8">
-	<title>Medifind | Doctores</title>
+	<title>Medifind | Asegurados</title>
 
 	<!-- Site favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="vendors/images/apple-touch-icon.png">
@@ -154,6 +154,7 @@
 						<a href="emergencia.php" class="dropdown-toggle no-arrow">
 							<span class="micon dw dw-ambulance"></span><span class="mtext">Emergencia</span>
 						</a>
+
 					</li>
 					<li>
 						<a href="enfermedades.php" class="dropdown-toggle no-arrow">
@@ -177,7 +178,7 @@
 					<div class="row">
 						<div class="col-md-6 col-sm-12">
 							<div class="title">
-								<h4>Doctores</h4>
+								<h4>Enfermedades</h4>
 							</div>
 							<nav aria-label="breadcrumb" role="navigation">
 								<ol class="breadcrumb">
@@ -189,7 +190,7 @@
 					</div>
 				</div>
 				<div class="card-box mb-30">
-				<h2 class="h4 pd-20">Doctores del hospital</h2>
+				<h2 class="h4 pd-20">Enfermedades a atender en el Hospital</h2>
 				<table class="data-table table nowrap">
 					<thead>
 						<tr>
@@ -197,18 +198,16 @@
 							
 						
 							<th>ID</th>
-							<th>Nombres</th>
-							<th>Apellidos</th>
+							<th>Nombre</th>
 							<th>Especialidad</th>
-						
+							<th>Doctor</th>
 
-							
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 						<?php
-							 $consulta = "SELECT id,nombres,apellidos,id_especialidad FROM doctor ";
+							 $consulta = "SELECT * FROM enfermedad ";
 							 $paci = mysqli_query($conexion, $consulta);
 							 
 							 $paciente = mysqli_fetch_array($paci);
@@ -220,20 +219,28 @@
 							<h5 class="font-16"><?php echo $paciente['id'];?></h5>
 							</td>
 
-							<td><?php echo $paciente['nombres'];
-							
-							?></td>
-							
-							<td><?php echo $paciente['apellidos'];
-							 $consulta = "SELECT nombre FROM especialidad WHERE id_especialidad= ".$paciente['id_especialidad']."";
-							 $paci = mysqli_query($conexion, $consulta);
-
-							 $paciente = mysqli_fetch_array($paci);
-							
-							?></td>
-							
 							<td><?php echo $paciente['nombre'];
 							
+							?></td>
+							
+							<?php
+							 $consulta = "SELECT nombre FROM especialidad WHERE id_especialidad= ".$paciente['especialidad']."";
+							 $paci = mysqli_query($conexion, $consulta);
+
+							 $paciente5 = mysqli_fetch_array($paci);
+							
+							?>
+							
+							<td><?php echo $paciente5['nombre'];
+							
+							
+							?></td>
+								<td><?php
+							 $consulta = "SELECT nombres, apellidos FROM doctor WHERE id_especialidad = ".$paciente['especialidad']."";
+							 $paci = mysqli_query($conexion, $consulta);
+
+							 $paciente6 = mysqli_fetch_array($paci);
+							echo $paciente6['nombres'].' '.$paciente6['apellidos'];
 							
 							?></td>
 							
