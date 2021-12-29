@@ -1,6 +1,5 @@
 const btnRegistrar = document.getElementById('btnRegistrar');
 const urlParams = new URLSearchParams(window.location.search);
-
 const nombresAsegurado = document.getElementById('nombresAsegurado'); 
 const apellidosAsegurado = document.getElementById('apellidosAsegurado');
 const dniAsegurado = document.getElementById('dniAsegurado');

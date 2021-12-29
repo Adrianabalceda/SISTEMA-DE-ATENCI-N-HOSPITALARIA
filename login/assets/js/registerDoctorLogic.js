@@ -6,6 +6,8 @@ const celular = document.getElementById('celular');
 const email = document.getElementById('email');
 const dni = document.getElementById('dni');
 const especialidad = document.getElementById('especialidad');
+
+
 const form = document.querySelector('.formulario');
 document.addEventListener('DOMContentLoaded', () => {
 
