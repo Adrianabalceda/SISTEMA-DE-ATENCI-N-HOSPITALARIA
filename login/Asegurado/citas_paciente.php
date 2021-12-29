@@ -97,8 +97,8 @@
 						<span class="user-name"><? echo $nombres; echo " "; echo $apellidos;?></span>
 					</a>
 					<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-						<a class="dropdown-item" href="profile.html"><i class="dw dw-user1"></i>Perfil</a>
-						<a class="dropdown-item" href="profile.html"><i class="dw dw-settings2"></i>Ajustes</a>
+						<a class="dropdown-item" href=""><i class="dw dw-user1"></i>Perfil</a>
+						<a class="dropdown-item" href=""><i class="dw dw-settings2"></i>Ajustes</a>
 						
 						<a class="dropdown-item" href="../src/cerrar_sesion.php"><i class="dw dw-logout"></i> Cerrar sesión</a>
 					</div>
@@ -154,6 +154,12 @@
 							<span class="micon dw dw-ambulance"></span><span class="mtext">Emergencia</span>
 						</a>
 					</li>
+					<li>
+						<a href="enfermedades.php" class="dropdown-toggle no-arrow">
+							<span class="micon dw dw-hospital"></span><span class="mtext">Enfermedades</span>
+						</a>
+					</li>
+				
 				
 				
 					
@@ -191,14 +197,14 @@
 							</div>
 						
 					</div>
-					<form>
+					<form >
 					    <div class="form-group row">
 						<label class="col-sm-12 col-md-2 col-form-label">Asegurado o familiar</label>
 							<div class="col-sm-12 col-md-10">
-								<select class="custom-select col-12">
+								<select class="custom-select col-12" name="paciente" id="paciente">
 								<option selected>Seleccione</option>
 									 
-									<option value="1"><?php echo $nombres;echo " ";echo $apellidos;?></option><?php
+									<option value="<?php echo $id?>"><?php echo $nombres;echo " ";echo $apellidos;?></option><?php
 									 $consulta = "SELECT * FROM familiar WHERE id_asegurado = ".$id."";
 									 $fam = mysqli_query($conexion, $consulta);
 									 
@@ -207,7 +213,7 @@
 									 foreach ($conexion->query($consulta) as $familiar){
 										
 								?>  
-                                    <option value="<?php $i?>"><?php echo $familiar['nombres'];echo " ";echo $familiar['apellidos']; $i++;?></option>
+                                    <option value="<?php echo $familiar['id']?>"><?php echo $familiar['nombres'];echo " ";echo $familiar['apellidos']; $i++;?></option>
 									<?php } ?>
                                 </select>
 								</div>
@@ -216,7 +222,7 @@
 						<div class="form-group row">
 							<label class="col-sm-12 col-md-2 col-form-label">Especialidad</label>
 							<div class="col-sm-12 col-md-10">
-								<select class="custom-select col-12">
+								<select class="custom-select col-12" name="especialidad" id="especialidad">
 								<option selected>Seleccione</option>
                                     <option value="1">Medicina General</option>
                                     <option value="2">Cardiología</option>
@@ -231,29 +237,17 @@
 						<div class="form-group row">
 							<label class="col-sm-12 col-md-2 col-form-label">Fecha</label>
 							<div class="col-sm-12 col-md-10">
-								<input class="form-control date-picker" placeholder="Seleccione la fecha" type="text">
+								<input class="form-control date-picker" placeholder="Seleccione la fecha" type="text" name="fecha" id="fecha" >
 							</div>
 						</div>
 						
 						<div class="form-group row">
 							<label class="col-sm-12 col-md-2 col-form-label">Hora</label>
 							<div class="col-sm-12 col-md-10">
-								<input class="form-control time-picker" placeholder="Seleccione la hora" type="text">
+								<input class="form-control time-picker" placeholder="Seleccione la hora" type="text" name="hora" id="hora">
 							</div>
 						</div>
-						<div class="form-group row">
-							<label class="col-sm-12 col-md-2 col-form-label">Especialidad</label>
-							<div class="col-sm-12 col-md-10">
-								<select class="custom-select col-12">
-								<option selected>Seleccione</option>
-                                    <option value="1">Medicina General</option>
-                                    <option value="2">Cardiología</option>
-                                    <option value="3">Neurología</option>
-                                    <option value="4">Pediatría</option>
-                                    <option value="5">Dermatología</option>
-								</select>
-							</div>
-						</div>
+						
 						<p class="mb-30"><b>RECUERDE:</b> De seleccionar un rango horario que no pertenezca al horario de atención de 8AM a 5PM de lunes a viernes, su cita no será validada en admisión</p>
 						
 						<div class="text-right">
@@ -264,6 +258,8 @@
 			
 		</div>
 	</div>
+	<script src="js/registerCitaLogic.js?v=<?php echo time(); ?>"></script>
+  
 	<!-- js -->
 	<script src="vendors/scripts/core.js"></script>
 	<script src="vendors/scripts/script.min.js"></script>
