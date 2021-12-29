@@ -7,6 +7,7 @@
     $celularAsegurado = $_POST['celularAsegurado'];
     $emailAsegurado = $_POST['emailAsegurado'];
     $fechaAsegurado = $_POST['fechaAsegurado'];
+	$contraseñaAsegurado = $_POST['contraseñaAsegurado'];
     $dniAsegurado = stripcslashes($dniAsegurado);
     $usuario = strtoupper($nombresAsegurado.'.'.$apellidosAsegurado);
 
@@ -17,8 +18,8 @@
 
     if($count !== 1 && $count2 !== 1) {
         
-        $sql = "INSERT INTO `asegurado` (`DNI`, `usuario`, `contraseña`, `nombres`, `apellidos`, `email`, `celular`,`fecha_nac`) 
-        VALUES ('$dniAsegurado', '$usuario','$dniAsegurado','$nombresAsegurado', '$apellidosAsegurado', '$emailAsegurado', '$celularAsegurado','$fechaAsegurado')";
+        $sql = "INSERT INTO `asegurado` (`id`, `DNI`, `usuario`, `contraseña`, `nombres`, `apellidos`, `email`, `celular`,`fecha_nac`) 
+        VALUES ('$dniAsegurado', '$dniAsegurado', '$usuario','$contraseñaAsegurado','$nombresAsegurado', '$apellidosAsegurado', '$emailAsegurado', '$celularAsegurado','$fechaAsegurado')";
         
         mysqli_query($conexion, $sql);
 

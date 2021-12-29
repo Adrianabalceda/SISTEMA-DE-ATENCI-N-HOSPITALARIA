@@ -99,6 +99,10 @@
                             <input type="text" class="form-control" placeholder="DNI"  name = "dniAsegurado" id="dniAsegurado"/>
                         </div>
                         <div class="mb-1">
+                            <p class="label-color mb-1">Contraseña*</p>
+                            <input type="password" class="form-control" name = "contraseñaAsegurado" id="contraseñaAsegurado"/>
+                        </div>
+                        <div class="mb-1">
                             <p class="label-color mb-1">Celular*</p>
                             <div class="input-group">
                                 <div class="input-group-prepend" style="height: 80px;">
