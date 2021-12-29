@@ -240,7 +240,7 @@
 					<div class="divider mb-4"></div>
 
 					<ul class="list-unstyled footer-menu lh-35">
-						<li><a href="#">Medicina General</a></li>
+						<li><a href="medicina-general.php">Medicina General</a></li>
 						<li><a href="cardiologia.php">Cardiología</a></li>
 						<li><a href="neurologia.php">Neurología</a></li>
 						<li><a href="pediatria.php">Pediatría</a></li>
