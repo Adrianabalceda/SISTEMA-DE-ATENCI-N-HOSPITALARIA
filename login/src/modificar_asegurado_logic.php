@@ -17,8 +17,8 @@
     $count = mysqli_num_rows($result); 
 
     if($count !== 1 && $count2 !== 1) {
-        
-        $sql = "UPDATE `asegurado` SET `nombres`='$nombresPadre',`apellidos`='$apellidosPadre',`celular`='$celularPadre',`email`='$emailPadre',`fecha_nacimiento`='$fechaAsegurado' WHERE `dni`='$dniAsegurado'";
+        //actualizar datos por dniAsegurado
+        $sql = "UPDATE `asegurado` SET `nombres`='$nombresAsegurado',`apellidos`='$apellidosAsegurado',`celular`='$celularAsegurado',`email`='$emailAsegurado',`fecha_nacimiento`='$fechaAsegurado' WHERE `DNI`='$dniAsegurado'"; //,`contraseña`='$contraseñaAsegurado'
         
         mysqli_query($conexion, $sql);
 

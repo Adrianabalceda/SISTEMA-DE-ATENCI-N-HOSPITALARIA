@@ -109,7 +109,7 @@
                         </div>
                         <div class="mb-1">
                             <p class="label-color mb-1">Correo electronico*</p>
-                            <input type="email" class="form-control" placeholder="Correo" name="emailPadre" id="emailPadre" required/>
+                            <input type="email" class="form-control" placeholder="Correo" name="emailAsegurado" id="emailAsegurado" required/>
                         </div>
                         <div class="mb-1">
                             <p class="label-color mb-1">Fecha nacimiento*</p>
