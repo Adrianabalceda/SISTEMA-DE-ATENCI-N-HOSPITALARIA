@@ -245,7 +245,7 @@
 						<div class="form-group row">
 							<label class="col-sm-12 col-md-2 col-form-label">Descripción</label>
 							<div class="col-sm-12 col-md-10">
-								<input class="form-control" value="Describa la situación" type="text">
+								<input class="form-control" placeholder="Describa la situación" type="text">
 							</div>
 						</div>
 						<p class="mb-30"><b>NOTA:</b> Luego de culminar el registro nuestra central de emergencia se pondrá en contacto con usted.</p>
