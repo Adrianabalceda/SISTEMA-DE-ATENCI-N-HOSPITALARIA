@@ -60,7 +60,7 @@
                     
                     <div class="container ml-4" id="containerLoginPageRight">
                         <div>
-                            <h5 class="fw-bold fs-4" id="titleLoginPage">Ingrese el DNI del usuario a eliminar</h5>
+                            <h5 class="fw-bold fs-4" id="titleLoginPage">Ingrese el DNI del usuario a eliminar del sistema</h5>
                         </div>
                         <form role="form" action="eliminacionUsuario.php" method="POST" class="formulario">
                             <div class="form-group">

@@ -8,14 +8,14 @@
 <?php
     include('src/conexion_db.php');
     $dni = $_POST['dni'];
-    $sql = "SELECT * FROM `doctor` WHERE dni = '$dni'";
+    $sql = "SELECT * FROM `doctor` WHERE id = '$dni'";
     $result = mysqli_query($conexion, $sql);
     $usuario = mysqli_fetch_array($result);
-    $tipoUsuario = "Doctor";
+    $tipoUsuario = 'Doctor';
 
 
     if(!isset($usuario)){
-        $sql = "SELECT * FROM `asegurado` WHERE dni = '$dni'";
+        $sql = "SELECT * FROM `asegurado` WHERE id = '$dni'";
         $result = mysqli_query($conexion, $sql);
         $usuario = mysqli_fetch_array($result);
         $tipoUsuario = "Asegurado";
@@ -77,7 +77,7 @@
                     
                     <div class="container ml-4" id="containerLoginPageRight">
                         <div>
-                            <h5 class="fw-bold fs-4" id="titleLoginPage">Información del usuario a eliminar</h5>
+                            <h5 class="fw-bold fs-4" id="titleLoginPage">Información de la cuenta a elimihnar del sistema</h5>
                         </div>
                         <form role="form" action="src/eliminacionUsuarioLogic.php" method="POST" class="formulario">
                             <div class="form-group">
