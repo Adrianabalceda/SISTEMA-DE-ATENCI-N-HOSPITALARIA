@@ -12,7 +12,7 @@
 <head>
 	<!-- Basic Page Info -->
 	<meta charset="utf-8">
-	<title>Medind | Asegurados</title>
+	<title>Medifind | Asegurados</title>
 
 	<!-- Site favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="vendors/images/apple-touch-icon.png">
@@ -27,9 +27,8 @@
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="vendors/styles/core.css">
 	<link rel="stylesheet" type="text/css" href="vendors/styles/icon-font.min.css">
-	<link rel="stylesheet" type="text/css" href="src/plugins/datatables/css/dataTables.bootstrap4.min.css">
-	<link rel="stylesheet" type="text/css" href="src/plugins/datatables/css/responsive.bootstrap4.min.css">
 	<link rel="stylesheet" type="text/css" href="vendors/styles/style.css">
+
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>
@@ -166,63 +165,76 @@
 	<div class="mobile-menu-overlay"></div>
 
 	<div class="main-container">
-		<div class="pd-ltr-20">
-			<div class="card-box pd-20 height-100-p mb-30">
-				<div class="row align-items-center">
-					<div class="col-md-4">
-						<img height="200" src="https://static.vecteezy.com/system/resources/previews/002/991/843/non_2x/doctor-patient-checkup-vector.jpg" alt="">
-					</div>
-					<div class="col-md-8">
-						<h4 class="font-20 weight-500 mb-10 text-capitalize">
-							Bienvenido asegurado <div class="weight-600 font-30 text-blue"><?php echo $nombres; echo ' '; echo $apellidos?></div>
-						</h4>
-						<p class="font-18 max-width-600">En este panel encontrará una variedad de opciones referentes a su cuenta...</p>
+		<div class="pd-ltr-20 xs-pd-20-10">
+			<div class="min-height-200px">
+				<div class="page-header">
+					<div class="row">
+						<div class="col-md-6 col-sm-12">
+							<div class="title">
+								<h4>Internados</h4>
+							</div>
+							<nav aria-label="breadcrumb" role="navigation">
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
+									<li class="breadcrumb-item active" aria-current="page">Internados</li>
+								</ol>
+							</nav>
+						</div>
 					</div>
 				</div>
-			</div>
-			
-			
-			<div class="card-box mb-30">
-				<h2 class="h4 pd-20">Citas programadas para usted</h2>
+				<div class="card-box mb-30">
+				<h2 class="h4 pd-20">Asegurado y/o familiares internados en el hospital</h2>
 				<table class="data-table table nowrap">
 					<thead>
 						<tr>
 							
-						<th>Fecha</th>
-							<th>Hora</th>
+							
+						
+							<th>ID</th>
 							<th>Nombres</th>
 							<th>Apellidos</th>
-							<th>Doctor</th>
 							<th>Especialidad</th>
+							<th>Doctor a cargo</th>
+							<th>ID Camilla</th>
+						
+
 							
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 						<?php
-							 $consulta = "SELECT * FROM cita_paciente_doctor WHERE id_asegurado= '$id'";
-							 $paci = mysqli_query($conexion, $consulta);
+							 $consulta = "SELECT * FROM familiar_atender WHERE id_familiar IN(SELECT id_familiar FROM familiar WHERE id_asegurado = ".$id.") ";
 							 
-							 $paciente = mysqli_fetch_array($paci);
 							 foreach ($conexion->query($consulta) as $paciente){
-						  
+								$consulta = "SELECT * FROM familiar_atender WHERE id_familiar IN(SELECT id_familiar FROM familiar WHERE id_asegurado = ".$id.") ";
+								$paci = mysqli_query($conexion, $consulta);
+								
+								$paciente = mysqli_fetch_array($paci);
 																		 ?>
 							
 							<td>
-							<h5 class="font-16"><?php echo $paciente['fecha'];?></h5>
+							<h5 class="font-16"><?php echo $paciente['id'];?></h5>
 							</td>
-							<td><?php echo $paciente['hora'];?></td>
-							<td><?php echo $nombres;?></td>
-							<td><?php echo $apellidos;
-							 $consulta = "SELECT nombres,apellidos,id_especialidad FROM doctor WHERE id= ".$paciente['id_doctor']."";
+
+							<td><?php echo $paciente['nombres'];
+							
+							?></td>
+							
+							<td><?php echo $paciente['apellidos'];
+							 $consulta = "SELECT nombre FROM especialidad WHERE id_especialidad= ".$paciente['id_especialidad']."";
 							 $paci = mysqli_query($conexion, $consulta);
+
 							 $paciente = mysqli_fetch_array($paci);
 							
 							?></td>
 							
-							<td><?php echo $paciente['nombres']; echo ' '; echo $paciente['apellidos'];?></td>
-
-							<td><?php echo $paciente['id_especialidad']; ?></td>
+							<td><?php echo $paciente['nombre'];
+							
+							
+							?></td>
+							
+							
 							
 						
 						</tr>
@@ -232,70 +244,6 @@
 					<?php }?>
 				</table>
 			</div>
-
-			<div class="card-box mb-30">
-				<h2 class="h4 pd-20">Citas programadas para sus familiares</h2>
-				<table class="data-table table nowrap">
-					<thead>
-						<tr>
-							
-							
-							<th>Fecha</th>
-							<th>Hora</th>
-							<th>Nombres</th>
-							<th>Apellidos</th>
-							<th>Doctor</th>
-							<th>Especialidad</th>
-						
-
-							
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-						<?php
-							 $consulta = "SELECT * FROM cita_familiar_doctor WHERE id_familiar IN (SELECT id from familiar WHERE id_asegurado = ".$id.")";
-							 $paci = mysqli_query($conexion, $consulta);
-							 
-							 $paciente = mysqli_fetch_array($paci);
-							 foreach ($conexion->query($consulta) as $paciente){
-						  	 ?>
-							
-							<td>
-							<h5 class="font-16"><?php echo $paciente['fecha'];?></h5>
-							</td>
-							<td><?php echo $paciente['hora'];
-							$consulta2 = "SELECT nombres,apellidos FROM familiar WHERE id= ".$paciente['id_familiar']."";
-							$paci5 = mysqli_query($conexion, $consulta2);
-
-							$paciente5 = mysqli_fetch_array($paci5);
-							
-							?></td>
-							<td><?php echo $paciente5['nombres'];?></td>
-							<td><?php echo $paciente5['apellidos'];
-							 $consulta = "SELECT nombres,apellidos,id_especialidad FROM doctor WHERE id= ".$paciente['id_doctor']."";
-							 $paci = mysqli_query($conexion, $consulta);
-
-							 $paciente = mysqli_fetch_array($paci);
-							
-							?></td>
-							
-							<td><?php echo $paciente['nombres']; echo ' '; echo $paciente['apellidos'];
-							
-							
-							?></td>
-							
-							<td><?php echo $paciente['id_especialidad']; ?></td>
-							
-						
-						</tr>
-						
-						
-					</tbody>
-					<?php }?>
-				</table>
-			</div>
-
 			<div class="footer-wrap pd-20 mb-20 card-box">
 				Medifind <a href="" target="_blank">G3</a>
 			</div>
@@ -306,11 +254,5 @@
 	<script src="vendors/scripts/script.min.js"></script>
 	<script src="vendors/scripts/process.js"></script>
 	<script src="vendors/scripts/layout-settings.js"></script>
-	<script src="src/plugins/apexcharts/apexcharts.min.js"></script>
-	<script src="src/plugins/datatables/js/jquery.dataTables.min.js"></script>
-	<script src="src/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
-	<script src="src/plugins/datatables/js/dataTables.responsive.min.js"></script>
-	<script src="src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
-	<script src="vendors/scripts/dashboard.js"></script>
 </body>
 </html>

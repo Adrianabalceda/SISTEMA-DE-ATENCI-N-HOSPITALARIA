@@ -42,7 +42,7 @@
 </head>
 <body>
 	
-	<?php include '../src/Doctor.php';?>
+<?php include '../src/Asegurado.php';?>
 	<div class="header">
 		<div class="header-left">
 			<div class="menu-icon dw dw-menu"></div>
@@ -60,34 +60,31 @@
 					<div class="dropdown-menu dropdown-menu-right">
 						<div class="notification-list mx-h-350 customscroll">
 							<?php
-							 $consulta = "SELECT * FROM doctor";
+							 $consulta = "SELECT * FROM familiar WHERE id_asegurado = ".$id."";
 							 $fam = mysqli_query($conexion, $consulta);
 							 
-							 $doctor = mysqli_fetch_array($fam);
-							 foreach ($conexion->query($consulta) as $doctor){
+							 $familiar = mysqli_fetch_array($fam);
+							 foreach ($conexion->query($consulta) as $familiar){
 						  
 																		 ?>
 						<ul>
 
-								<li>
-									<a href="#">
+<li>
+	<a href="#">
 
-										<img src="https://thumbs.dreamstime.com/b/icono-p%C3%BArpura-fino-del-usuario-muestra-linear-de-la-pendiente-136856587.jpg" alt="">
-										<h3><?php echo $doctor['nombres'];
-										echo " "; 
-										echo $doctor['apellidos'];
-										$cons = "SELECT nombre FROM especialidad WHERE id_especialidad = ".$doctor['id_especialidad']."";
-										$f = mysqli_query($conexion, $cons);
-										
-										$especialidad = mysqli_fetch_array($f);
-										?></h3>
-										<p><?php echo $especialidad['nombre'];
-										?></p>
-									</a>
-								</li>
-								
-							</ul>
-							<?php }?>
+		<img src="https://thumbs.dreamstime.com/b/icono-p%C3%BArpura-fino-del-usuario-muestra-linear-de-la-pendiente-136856587.jpg" alt="">
+		<h3><?php echo $familiar['nombres'];
+		echo " "; 
+		echo $familiar['apellidos'];
+		
+		?></h3>
+		<p><?php echo $familiar['DNI'];
+		?></p>
+	</a>
+</li>
+
+</ul>
+<?php }?>
 						</div>
 					</div>
 				</div>
@@ -113,6 +110,7 @@
 	</div>
 
 	
+
 	<div class="left-side-bar">
 		<div class="brand-logo">
 			<a href="index.php">
@@ -133,8 +131,8 @@
 						
 					</li>
 					<li class="dropdown">
-						<a href="javascript:;" class="dropdown-toggle no-arrow">
-							<span class="micon dw dw-edit2"></span><span class="mtext">Consultas</span>
+						<a href="internados.php" class="dropdown-toggle no-arrow">
+							<span class="micon dw dw-edit2"></span><span class="mtext">Internados</span>
 						</a>
 					
 					</li>
@@ -153,23 +151,12 @@
 					
 					
 					<li>
-						<a href="" class="dropdown-toggle no-arrow">
-							<span class="micon dw dw-chat3"></span><span class="mtext">Reportes</span>
+						<a href="emergencia.php" class="dropdown-toggle no-arrow">
+							<span class="micon dw dw-ambulance"></span><span class="mtext">Emergencia</span>
 						</a>
 					</li>
 				
-					<li>
-						<div class="dropdown-divider"></div>
-					</li>
-					<li>
-						<div class="sidebar-small-cap">Extra</div>
-					</li>
-					<li>
-						<a href="javascript:;" class="dropdown-toggle no-arrow">
-							<span class="micon dw dw-edit-2"></span><span class="mtext">Documentacion</span>
-						</a>
-						
-					</li>
+				
 					
 				</ul>
 			</div>

@@ -1,18 +1,17 @@
 <?php
-            session_start();
+    session_start();
 
-            if(!isset($_SESSION['datos_usuario']) || !$_SESSION['role']=='asegurado') {
-                header("Location: ../../login.php");
-            }
+    if(!isset($_SESSION['datos_usuario']) || !$_SESSION['role']=='asegurado') {
+         header("Location: ../../login.php");
+    }
         
-        ?>
-
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<!-- Basic Page Info -->
 	<meta charset="utf-8">
-	<title>Medind | Asegurados</title>
+	<title>Medifind | Asegurados</title>
 
 	<!-- Site favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="vendors/images/apple-touch-icon.png">
@@ -27,9 +26,8 @@
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="vendors/styles/core.css">
 	<link rel="stylesheet" type="text/css" href="vendors/styles/icon-font.min.css">
-	<link rel="stylesheet" type="text/css" href="src/plugins/datatables/css/dataTables.bootstrap4.min.css">
-	<link rel="stylesheet" type="text/css" href="src/plugins/datatables/css/responsive.bootstrap4.min.css">
 	<link rel="stylesheet" type="text/css" href="vendors/styles/style.css">
+
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>
@@ -42,9 +40,9 @@
 	</script>
 </head>
 <body>
-	
 <?php include '../src/Asegurado.php';?>
-	<div class="header">
+
+<div class="header">
 		<div class="header-left">
 			<div class="menu-icon dw dw-menu"></div>
 			<div class="search-toggle-icon dw dw-search2" data-toggle="header_search"></div>
@@ -166,139 +164,98 @@
 	<div class="mobile-menu-overlay"></div>
 
 	<div class="main-container">
-		<div class="pd-ltr-20">
-			<div class="card-box pd-20 height-100-p mb-30">
-				<div class="row align-items-center">
-					<div class="col-md-4">
-						<img height="200" src="https://static.vecteezy.com/system/resources/previews/002/991/843/non_2x/doctor-patient-checkup-vector.jpg" alt="">
-					</div>
-					<div class="col-md-8">
-						<h4 class="font-20 weight-500 mb-10 text-capitalize">
-							Bienvenido asegurado <div class="weight-600 font-30 text-blue"><?php echo $nombres; echo ' '; echo $apellidos?></div>
-						</h4>
-						<p class="font-18 max-width-600">En este panel encontrará una variedad de opciones referentes a su cuenta...</p>
+		<div class="pd-ltr-20 xs-pd-20-10">
+			<div class="min-height-200px">
+				<div class="page-header">
+					<div class="row">
+						<div class="col-md-6 col-sm-12">
+							<div class="title">
+								<h4>Reportar emergencia</h4>
+							</div>
+							<nav aria-label="breadcrumb" role="navigation">
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+									<li class="breadcrumb-item active" aria-current="page">Emergencia</li>
+								</ol>
+							</nav>
+						</div>
+						
 					</div>
 				</div>
-			</div>
+				<!-- Default Basic Forms Start -->
+				<div class="pd-20 card-box mb-30">
+					<div class="clearfix">
+						<div class="pull-left">
+							<h4 class="text-blue h4">Reportar emergencia</h4>
+							<p class="mb-30">Complete con claridad los siguientes campos</p>
+							</div>
+						
+					</div>
+					<form>
+					    <div class="form-group row">
+						<label class="col-sm-12 col-md-2 col-form-label">Asegurado o familiar</label>
+							<div class="col-sm-12 col-md-10">
+								<select class="custom-select col-12">
+								<option selected>Seleccione</option>
+									 
+									<option value="1"><?php echo $nombres;echo " ";echo $apellidos;?></option><?php
+									 $consulta = "SELECT * FROM familiar WHERE id_asegurado = ".$id."";
+									 $fam = mysqli_query($conexion, $consulta);
+									 
+									 $familiar = mysqli_fetch_array($fam);
+									 $i = 1;
+									 foreach ($conexion->query($consulta) as $familiar){
+										
+								?>  
+                                    <option value="<?php $i?>"><?php echo $familiar['nombres'];echo " ";echo $familiar['apellidos']; $i++;?></option>
+									<?php } ?>
+                                </select>
+								</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-sm-12 col-md-2 col-form-label">Especialidad</label>
+							<div class="col-sm-12 col-md-10">
+								<select class="custom-select col-12">
+								<option selected>Seleccione</option>
+                                    <option value="1">Medicina General</option>
+                                    <option value="2">Cardiología</option>
+                                    <option value="3">Neurología</option>
+                                    <option value="4">Pediatría</option>
+                                    <option value="5">Dermatología</option>
+								</select>
+							</div>
+						</div>
+						
+						
+						<div class="form-group row">
+							<label class="col-sm-12 col-md-2 col-form-label">Fecha</label>
+							<div class="col-sm-12 col-md-10">
+								<input class="form-control date-picker" placeholder="Seleccione la fecha" type="text">
+							</div>
+						</div>
+						
+						<div class="form-group row">
+							<label class="col-sm-12 col-md-2 col-form-label">Hora</label>
+							<div class="col-sm-12 col-md-10">
+								<input class="form-control time-picker" placeholder="Seleccione la hora" type="text">
+							</div>
+						</div>
+						
+						<div class="form-group row">
+							<label class="col-sm-12 col-md-2 col-form-label">Descripción</label>
+							<div class="col-sm-12 col-md-10">
+								<input class="form-control" value="Describa la situación" type="text">
+							</div>
+						</div>
+						<p class="mb-30"><b>NOTA:</b> Luego de culminar el registro nuestra central de emergencia se pondrá en contacto con usted.</p>
+						
+						<div class="text-right">
+									<button class="btn btn-primary">Registrar</button>
+								</div>
+					</form>
+					
 			
-			
-			<div class="card-box mb-30">
-				<h2 class="h4 pd-20">Citas programadas para usted</h2>
-				<table class="data-table table nowrap">
-					<thead>
-						<tr>
-							
-						<th>Fecha</th>
-							<th>Hora</th>
-							<th>Nombres</th>
-							<th>Apellidos</th>
-							<th>Doctor</th>
-							<th>Especialidad</th>
-							
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-						<?php
-							 $consulta = "SELECT * FROM cita_paciente_doctor WHERE id_asegurado= '$id'";
-							 $paci = mysqli_query($conexion, $consulta);
-							 
-							 $paciente = mysqli_fetch_array($paci);
-							 foreach ($conexion->query($consulta) as $paciente){
-						  
-																		 ?>
-							
-							<td>
-							<h5 class="font-16"><?php echo $paciente['fecha'];?></h5>
-							</td>
-							<td><?php echo $paciente['hora'];?></td>
-							<td><?php echo $nombres;?></td>
-							<td><?php echo $apellidos;
-							 $consulta = "SELECT nombres,apellidos,id_especialidad FROM doctor WHERE id= ".$paciente['id_doctor']."";
-							 $paci = mysqli_query($conexion, $consulta);
-							 $paciente = mysqli_fetch_array($paci);
-							
-							?></td>
-							
-							<td><?php echo $paciente['nombres']; echo ' '; echo $paciente['apellidos'];?></td>
-
-							<td><?php echo $paciente['id_especialidad']; ?></td>
-							
-						
-						</tr>
-						
-						
-					</tbody>
-					<?php }?>
-				</table>
-			</div>
-
-			<div class="card-box mb-30">
-				<h2 class="h4 pd-20">Citas programadas para sus familiares</h2>
-				<table class="data-table table nowrap">
-					<thead>
-						<tr>
-							
-							
-							<th>Fecha</th>
-							<th>Hora</th>
-							<th>Nombres</th>
-							<th>Apellidos</th>
-							<th>Doctor</th>
-							<th>Especialidad</th>
-						
-
-							
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-						<?php
-							 $consulta = "SELECT * FROM cita_familiar_doctor WHERE id_familiar IN (SELECT id from familiar WHERE id_asegurado = ".$id.")";
-							 $paci = mysqli_query($conexion, $consulta);
-							 
-							 $paciente = mysqli_fetch_array($paci);
-							 foreach ($conexion->query($consulta) as $paciente){
-						  	 ?>
-							
-							<td>
-							<h5 class="font-16"><?php echo $paciente['fecha'];?></h5>
-							</td>
-							<td><?php echo $paciente['hora'];
-							$consulta2 = "SELECT nombres,apellidos FROM familiar WHERE id= ".$paciente['id_familiar']."";
-							$paci5 = mysqli_query($conexion, $consulta2);
-
-							$paciente5 = mysqli_fetch_array($paci5);
-							
-							?></td>
-							<td><?php echo $paciente5['nombres'];?></td>
-							<td><?php echo $paciente5['apellidos'];
-							 $consulta = "SELECT nombres,apellidos,id_especialidad FROM doctor WHERE id= ".$paciente['id_doctor']."";
-							 $paci = mysqli_query($conexion, $consulta);
-
-							 $paciente = mysqli_fetch_array($paci);
-							
-							?></td>
-							
-							<td><?php echo $paciente['nombres']; echo ' '; echo $paciente['apellidos'];
-							
-							
-							?></td>
-							
-							<td><?php echo $paciente['id_especialidad']; ?></td>
-							
-						
-						</tr>
-						
-						
-					</tbody>
-					<?php }?>
-				</table>
-			</div>
-
-			<div class="footer-wrap pd-20 mb-20 card-box">
-				Medifind <a href="" target="_blank">G3</a>
-			</div>
 		</div>
 	</div>
 	<!-- js -->
@@ -306,11 +263,5 @@
 	<script src="vendors/scripts/script.min.js"></script>
 	<script src="vendors/scripts/process.js"></script>
 	<script src="vendors/scripts/layout-settings.js"></script>
-	<script src="src/plugins/apexcharts/apexcharts.min.js"></script>
-	<script src="src/plugins/datatables/js/jquery.dataTables.min.js"></script>
-	<script src="src/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
-	<script src="src/plugins/datatables/js/dataTables.responsive.min.js"></script>
-	<script src="src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
-	<script src="vendors/scripts/dashboard.js"></script>
 </body>
 </html>

@@ -84,15 +84,16 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="modificar_tipo_usuario.php">
-                                <div href="#" id="btnmodificarUsuario" class="d-block shadow box-pre-login pointer bg-2nd text-decoration-none text-black rounded border-sacns-ge p-2 d-flex align-items-center mt-4 col-lg-10">
+
+                            <a href="busquedaAñadirFamiliar.php">
+                                <div href="#" id="btnañadirFamiliar" class="d-block shadow box-pre-login pointer bg-2nd text-decoration-none text-black rounded border-sacns-ge p-2 d-flex align-items-center mt-4 col-lg-10">
                                     <div class="bg-1st p-3 pb-2 ms-2 me-4 polygon">
                                         <i class="far fa-user fs-5 text-white"></i>
                                     </div>
                                     <div class="d-flex w-100 justify-content-between align-items-center">
                                         <div>
-                                            <p class="fw-bold mb-0">MODIFICAR USUARIO</p>
-                                            <p class="text-secondary fs-6">Modificar un usuario existente</p>
+                                            <p class="fw-bold mb-0">AÑADIR FAMILIAR</p>
+                                            <p class="text-secondary fs-6">Añadir familiar a cuenta de asegurado existente</p>
                                         </div>
                                         <div class="pe-3 d-none arrow">
                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -102,6 +103,7 @@
                                     </div>
                                 </div>
                             </a>
+
                             <a href="busquedaEliminarUsuario.php">
                                 <div href="#" id="btnEliminarUsuario" class="d-block shadow box-pre-login pointer bg-2nd text-decoration-none text-black rounded border-sacns-ge p-2 d-flex align-items-center mt-4 col-lg-10">
                                     <div class="bg-1st p-3 pb-2 ms-2 me-4 polygon">

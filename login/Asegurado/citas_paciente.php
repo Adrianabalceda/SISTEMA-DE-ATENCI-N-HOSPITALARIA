@@ -130,8 +130,8 @@
 						
 					</li>
 					<li class="dropdown">
-						<a href="javascript:;" class="dropdown-toggle no-arrow">
-							<span class="micon dw dw-edit2"></span><span class="mtext">Consultas</span>
+						<a href="internados.php" class="dropdown-toggle no-arrow">
+							<span class="micon dw dw-edit2"></span><span class="mtext">Internados</span>
 						</a>
 					
 					</li>
@@ -150,23 +150,12 @@
 					
 					
 					<li>
-						<a href="" class="dropdown-toggle no-arrow">
-							<span class="micon dw dw-chat3"></span><span class="mtext">Reportes</span>
+						<a href="emergencia.php" class="dropdown-toggle no-arrow">
+							<span class="micon dw dw-ambulance"></span><span class="mtext">Emergencia</span>
 						</a>
 					</li>
 				
-					<li>
-						<div class="dropdown-divider"></div>
-					</li>
-					<li>
-						<div class="sidebar-small-cap">Extra</div>
-					</li>
-					<li>
-						<a href="javascript:;" class="dropdown-toggle no-arrow">
-							<span class="micon dw dw-edit-2"></span><span class="mtext">Documentacion</span>
-						</a>
-						
-					</li>
+				
 					
 				</ul>
 			</div>
