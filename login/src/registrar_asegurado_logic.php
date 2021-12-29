@@ -8,22 +8,16 @@
     $emailAsegurado = $_POST['emailAsegurado'];
     $fechaAsegurado = $_POST['fechaAsegurado'];
     $dniAsegurado = stripcslashes($dniAsegurado);
-    $usuario = strtoupper($nombres.'.'.$apellidos);
+    $usuario = strtoupper($nombresAsegurado.'.'.$apellidosAsegurado);
 
 
     $sql = "SELECT * FROM `asegurado` WHERE DNI = '$dniAsegurado'";
     $result = mysqli_query($conexion, $sql);
-    $count = mysqli_num_rows($result);
-    
-    $sql = "SELECT * FROM `doctor` WHERE DNI = '$dniAsegurado'";
-    $result = mysqli_query($conexion, $sql);
-    $count2 = mysqli_num_rows($result);
-
-    
+    $count = mysqli_num_rows($result); 
 
     if($count !== 1 && $count2 !== 1) {
         
-        $sql = "INSERT INTO `asegurado` (`DNI`, `usuario`, `contraseña`, `nombres`, `apellidos`, `email`, `celular`,'fecha_nac') 
+        $sql = "INSERT INTO `asegurado` (`DNI`, `usuario`, `contraseña`, `nombres`, `apellidos`, `email`, `celular`,`fecha_nac`) 
         VALUES ('$dniAsegurado', '$usuario','$dniAsegurado','$nombresAsegurado', '$apellidosAsegurado', '$emailAsegurado', '$celularAsegurado','$fechaAsegurado')";
         
         mysqli_query($conexion, $sql);
