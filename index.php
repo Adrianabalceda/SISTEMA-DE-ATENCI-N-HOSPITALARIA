@@ -108,6 +108,7 @@
 					<div class="btn-container ">
 						<a href="login/"  class="btn btn-main-2 btn-icon btn-round-full">ACCEDER <i class="icofont-simple-right ml-2  "></i></a>
 					</div>
+					<b class="mb-5 pr-5"><br>NO ATENDEMOS CASOS DE COVID-19</b><br></br>
 				</div>
 			</div>
 		</div>
