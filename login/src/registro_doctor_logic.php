@@ -27,7 +27,7 @@
             $especialidad = "Dermatología";
             break;
     }
-    $sql = "SELECT * FROM `doctor` WHERE id_especialidad = '$especialidad'";
+    $sql = "SELECT * FROM `doctor` WHERE id_especialidad = '$especialidad_id'";
     $result = mysqli_query($conexion, $sql);
     $count = mysqli_num_rows($result);
     //var_dump($count);
@@ -36,13 +36,11 @@
     $result = mysqli_query($conexion, $sql);
     $count2 = mysqli_num_rows($result);
 
-    $sql = "SELECT * FROM `asegurado` WHERE id = '$doctor_id'";
-    $result = mysqli_query($conexion, $sql);
-    $count3 = mysqli_num_rows($result);
+
 
    
 
-    if($count < 1 && $count2 < 1 && $count3 < 1){
+    if($count < 1 && $count2 < 1){
         $sql = "INSERT INTO `doctor` (`id`, `usuario`, `contraseña`, `nombres`, 
         `apellidos`, `id_especialidad`, `email`, `celular`) 
         VALUES ('$doctor_id','$usuario','$doctor_id','$nombres','$apellidos','$especialidad_id','$email','$celular')";
