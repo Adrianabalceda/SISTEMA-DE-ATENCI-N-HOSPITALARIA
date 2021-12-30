@@ -9,7 +9,7 @@ include 'includes/header.php'
 <?php
     include('src/conexion_db.php');
     $dni = $_POST['dni'];
-
+    
     $sql = "SELECT * FROM `asegurado` WHERE id = '$dni'";
     $result = mysqli_query($conexion, $sql);
     $count = mysqli_num_rows($result);
