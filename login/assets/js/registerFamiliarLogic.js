@@ -53,7 +53,7 @@ const validateForm = (e) => {
     const fechaValue = fecha.value;
 
     if (nombresValue == '' || apellidosValue == '' || dniValue == '' || emailValue == "" 
-        || fechaValue == ''|| idaseguradoValue== '') {
+        || fechaValue == ''|| idaseguradoValue == '') {
         swal.fire({
             title: 'Error',
             text: 'Debe completar todos los campos',
