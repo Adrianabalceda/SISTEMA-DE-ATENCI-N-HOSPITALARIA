@@ -1,23 +1,20 @@
 <?php
-    session_start();
+session_start();
 
-    if(!isset($_SESSION['datos_usuario']) || !$_SESSION['role']=='admin') {
-        header("Location: login.php");
-    }
-    include 'includes/header.php'
+if (!isset($_SESSION['datos_usuario']) || !$_SESSION['role'] == 'admin') {
+    header("Location: login.php");
+}
+include 'includes/header.php'
 ?>
 <?php
-include('src/conexion_db.php');
-$dni = $_POST['dni'];
+    include('src/conexion_db.php');
+    $dni = $_POST['dni'];
 
-$sql = "SELECT * FROM `asegurado` WHERE id = '$dni'";
-$result = mysqli_query($conexion, $sql);
+    $sql = "SELECT * FROM `asegurado` WHERE id = '$dni'";
+    $result = mysqli_query($conexion, $sql);
+    $count = mysqli_num_rows($result);
 
-$count = mysqli_num_rows($result);
-
-
-
-include 'includes/header.php';
+    include 'includes/header.php';
 ?>
 
 <body>

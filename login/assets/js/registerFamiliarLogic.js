@@ -47,13 +47,13 @@ const validateForm = (e) => {
     e.preventDefault();
     const nombresValue = nombres.value;
     const apellidosValue = apellidos.value;
-    const dniAseguradoValue = dni.value;
     const idaseguradoValue =idasegurado.value;
+    const dniValue = dni.value;
     const emailValue = email.value;
     const fechaValue = fecha.value;
 
-    if (nombresValue === '' || apellidosValue === '' || dniValue === '' || emailValue ==='' 
-        || fechaValue ==''|| idaseguradoValue=='') {
+    if (nombresValue == '' || apellidosValue == '' || dniValue == '' || emailValue == "" 
+        || fechaValue == ''|| idaseguradoValue== '') {
         swal.fire({
             title: 'Error',
             text: 'Debe completar todos los campos',
