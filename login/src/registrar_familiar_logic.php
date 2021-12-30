@@ -34,9 +34,7 @@
 
         redirect("../admin_principal.php" , false);
     } else {
-
-            header("location: ../AñadirFamiliar.php?error=1");
-
+            header("location: ../AñadirFamiliar.php?error=1");  
     }
 
 ?>
