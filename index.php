@@ -108,6 +108,7 @@
 					<div class="btn-container ">
 						<a href="login/"  class="btn btn-main-2 btn-icon btn-round-full">ACCEDER <i class="icofont-simple-right ml-2  "></i></a>
 					</div>
+					<b class="mb-5 pr-5"><br>NO ATENDEMOS CASOS DE COVID-19</b><br></br>
 				</div>
 			</div>
 		</div>
@@ -125,7 +126,7 @@
 						<span>Servicio las 24 horas</span>
 						<h4 class="mb-3">Citas Online</h4>
 						<p class="mb-4">Obtenga todo el apoyo que necesite las 24 horas del día los 7 días a las semana</p>
-						<a href="appoinment.html" class="btn btn-main btn-round-full">Registrar una cita</a>
+						<a href="appoinment.php" class="btn btn-main btn-round-full">Registrar una cita</a>
 					</div>
 				
 					<div class="feature-item mb-5 mb-lg-0">
@@ -175,7 +176,7 @@
 					<h2 class="title-color">Salud personal <br>& vida saludable</h2>
 					<p class="mt-4 mb-5">Proveemos el mejor servicio de Lima metropolitana con atención las 24 / 7 y los mejores médicos.</p>
 
-					<a href="service.html" class="btn btn-main-2 btn-round-full btn-icon">Servicios<i class="icofont-simple-right ml-3"></i></a>
+					<a href="service.php" class="btn btn-main-2 btn-round-full btn-icon">Servicios<i class="icofont-simple-right ml-3"></i></a>
 				</div>
 			</div>
 		</div>
@@ -250,10 +251,10 @@
 				<div class="service-item mb-4">
 					<div class="icon d-flex align-items-center">
 						<i class="icofont-brain-alt text-lg"></i>
-						<h4 class="mt-3 mb-3">Neurocirugía</h4>
+						<h4 class="mt-3 mb-3">Neurología</h4>
 					</div>
 					<div class="content">
-						<p class="mb-4">Los mejores cirujanos.</p>
+						<p class="mb-4">Los mejores neurólogos.</p>
 					</div>
 				</div>
 			</div>

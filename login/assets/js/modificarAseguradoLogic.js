@@ -1,23 +1,26 @@
 const btnRegistrar = document.getElementById('btnRegistrar');
 const urlParams = new URLSearchParams(window.location.search);
-const nombres = document.getElementById('nombresFamiliar'); 
-const apellidos = document.getElementById('apellidosFamiliar');
-const dni = document.getElementById('dniFamiliar');
-const idasegurado = document.getElementById('dniasegurado');
-const email = document.getElementById('email');
-const fecha = document.getElementById('fecha');
+const nombresAsegurado = document.getElementById('nombresAsegurado'); 
+const apellidosAsegurado = document.getElementById('apellidosAsegurado');
+const dniAsegurado = document.getElementById('dniAsegurado');
+const celularAsegurado = document.getElementById('celularAsegurado');
+const emailAsegurado = document.getElementById('emailAsegurado');
+const fechaAsegurado = document.getElementById('fechaAsegurado');
 
 
 const form = document.querySelector('.formulario');
 document.addEventListener('DOMContentLoaded', () => {
 
     if (urlParams.get('error') == '1') {
-        showError('Ya existen usuarios registrados con ese DNI');
+        showError('Ya existe un usuario registrado con ese DNI');
     }
 
+    /* if (urlParams.get('error') == '2') {
+        showError('Ya existe en el sistema un usuario con este DNI');
+    } */
 
     if (urlParams.get('mensaje') == '1') {
-        showGod('El familiar fue añadido exitosamente');
+        showGod('El usuario fue modificado exitosamente');
     }
 
     btnRegistrar.addEventListener('click', validateForm);
@@ -45,15 +48,15 @@ const showGod = (error) => {
 
 const validateForm = (e) => {
     e.preventDefault();
-    const nombresValue = nombres.value;
-    const apellidosValue = apellidos.value;
-    const idaseguradoValue =idasegurado.value;
-    const dniValue = dni.value;
-    const emailValue = email.value;
-    const fechaValue = fecha.value;
+    const nombresAseguradoValue = nombresAsegurado.value;
+    const apellidosAseguradoValue = apellidosAsegurado.value;
+    const dniAseguradoValue = dniAsegurado.value;
+    const celularAseguradoValue = celularAsegurado.value;
+    const emailAseguradoValue = emailAsegurado.value;
+    const fechaAseguradoValue = fechaAsegurado.value;
 
-    if (nombresValue == '' || apellidosValue == '' || dniValue == '' || emailValue == "" 
-        || fechaValue == ''|| idaseguradoValue == '') {
+    if (nombresAseguradoValue === '' || apellidosAseguradoValue === '' || dniAseguradoValue === '' || celularAseguradoValue === '' || emailAseguradoValue ==='' 
+        || fechaAseguradoValue =='') {
         swal.fire({
             title: 'Error',
             text: 'Debe completar todos los campos',
@@ -64,7 +67,7 @@ const validateForm = (e) => {
         return;
     }
 
-    if (!dniValue.match(/^[0-9]+$/) ) {
+    if (!dniAseguradoValue.match(/^[0-9]+$/) ) {
         swal.fire({
             title: 'Error',
             text: 'El ID debe ser un número',

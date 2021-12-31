@@ -109,7 +109,7 @@
                         </div>
                         <div class="mb-1">
                             <p class="label-color mb-1">Correo electronico*</p>
-                            <input type="email" class="form-control" placeholder="Correo" name="emailPadre" id="emailPadre" required/>
+                            <input type="email" class="form-control" placeholder="Correo" name="emailAsegurado" id="emailAsegurado" required/>
                         </div>
                         <div class="mb-1">
                             <p class="label-color mb-1">Fecha nacimiento*</p>
@@ -117,15 +117,15 @@
                         </div>
                         
                         <div class="mt-5">
-                            <button class="btn btn-colors d-block w-100" type="submit" id="btnRegistrar">SIGUIENTE</button>
-                        </div>
+                        <button  class = " btn btn-colors d-block w-100 " type = " submit " id="btnRegistrar"> Modificar </button>
+                    </div>
                     </form>
                 </div>
                   
             </div>
         </div>
     </div>
-    <script src="assets/js/registerAseguradoLogic.js?v=<?php echo time(); ?>"></script>
+    <script src="assets/js/modificarAseguradoLogic.js?v=<?php echo time(); ?>"></script>
     <!--Fotter-->
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js?v=<?php echo time(); ?>" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

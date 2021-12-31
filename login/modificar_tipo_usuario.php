@@ -87,7 +87,7 @@
                                     <div class="d-flex w-100 justify-content-between align-items-center">
                                         <div>
                                             <p class="fw-bold mb-0">ASEGURADO</p>
-                                            <p class="text-secondary fs-6">Modificar un nuevo usuario tipo asegurado</p>
+                                            <p class="text-secondary fs-6">Modificar un usuario tipo asegurado</p>
                                         </div>
                                         <div class="pe-3 d-none arrow">
                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -105,7 +105,7 @@
                                     <div class="d-flex w-100 justify-content-between align-items-center">
                                         <div>
                                             <p class="fw-bold mb-0">DOCTOR</p>
-                                            <p class="text-secondary fs-6">Modificar un nuevo usuario tipo doctor</p>
+                                            <p class="text-secondary fs-6">Modificar un usuario tipo doctor</p>
                                         </div>
                                         <div class="pe-3 d-none arrow">
                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">

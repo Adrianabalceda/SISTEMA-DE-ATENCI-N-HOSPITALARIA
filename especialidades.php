@@ -187,7 +187,7 @@
 				<div class="cta-content">
 					<div class="divider mb-4"></div>
 					<h2 class="mb-5 text-lg">Nos complace poder ofrecerle<span class="title-color">la oportunidad de sentirse saludable</span></h2>
-					<a href="appoinment.html" class="btn btn-main-2 btn-round-full">Sacar una cita<i class="icofont-simple-right  ml-2"></i></a>
+					<a href="appoinment.php" class="btn btn-main-2 btn-round-full">Sacar una cita<i class="icofont-simple-right  ml-2"></i></a>
 				</div>
 			</div>
 		</div>
