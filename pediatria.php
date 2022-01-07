@@ -101,7 +101,6 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="block text-center">
-						<span class="text-white">Detalles</span>
 						<h1 class="text-capitalize mb-5 text-lg">Pediatría</h1>
 
 						<!-- <ul class="list-inline breadcumb-nav">
