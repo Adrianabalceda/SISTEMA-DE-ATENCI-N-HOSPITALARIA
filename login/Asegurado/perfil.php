@@ -13,7 +13,7 @@ if (!isset($_SESSION['datos_usuario']) || !$_SESSION['role'] == 'asegurado') {
 <head>
 	<!-- Basic Page Info -->
 	<meta charset="utf-8">
-	<title>Medind | Asegurados</title>
+	<title>Medind | Perfil</title>
 
 	<!-- Site favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="vendors/images/apple-touch-icon.png">
@@ -258,7 +258,7 @@ if (!isset($_SESSION['datos_usuario']) || !$_SESSION['role'] == 'asegurado') {
 					</div>
 
 					<div class="text-right">
-						<a href="../Doctor/ajustes.php"><button class="btn btn-primary">Modificar Datos y/o Contraseña</button></a>
+						<a href="../Asegurado/ajustes.php"><button class="btn btn-primary">Modificar Datos y/o Contraseña</button></a>
 					</div>
 
 
@@ -277,46 +277,50 @@ if (!isset($_SESSION['datos_usuario']) || !$_SESSION['role'] == 'asegurado') {
 					<div class="pd-20 card-box mb-30">
 						<div class="clearfix">
 							<div class="pull-left">
-								<h4 class="text-blue h4">Familiar <?php echo $cont ?></h4>
+								<h4 class="text-blue h4">Familiar <?php echo $cont; ?></h4>
 							</div>
 
 						</div>
-
-						<div class="form-group row">
-							<label class="col-sm-12 col-md-2 col-form-label">Nombres: </label>
-							<div class="col-sm-12 col-md-10">
-								<input id="celular" class="form-control" value="<?php echo $familiar['nombres'] ?>" readonly>
+						<form role="form" action="/login/src/editar_datos_asegurado_logic.php" method="POST" class="formulario">
+							<div class="form-group row">
+								<label class="col-sm-12 col-md-2 col-form-label">Nombres: </label>
+								<div class="col-sm-12 col-md-10">
+									<input id="nombre" class="form-control" value="<?php echo $familiar['nombres'] ?>" readonly>
+								</div>
 							</div>
-						</div>
 
-						<div class="form-group row">
-							<label class="col-sm-12 col-md-2 col-form-label">Apellidos: </label>
-							<div class="col-sm-12 col-md-10">
-								<input id="celular" class="form-control" value="<?php echo $familiar['apellidos'] ?>" readonly>
+							<div class="form-group row">
+								<label class="col-sm-12 col-md-2 col-form-label">Apellidos: </label>
+								<div class="col-sm-12 col-md-10">
+									<input id="apellido" class="form-control" value="<?php echo $familiar['apellidos'] ?>" readonly>
+								</div>
 							</div>
-						</div>
 
-						<div class="form-group row">
-							<label class="col-sm-12 col-md-2 col-form-label">DNI: </label>
-							<div class="col-sm-12 col-md-10">
-								<input id="celular" class="form-control" value="<?php echo $familiar['DNI'] ?>" readonly>
+							<div class="form-group row">
+								<label class="col-sm-12 col-md-2 col-form-label">DNI: </label>
+								<div class="col-sm-12 col-md-10">
+									<input id="dni" class="form-control" value="<?php echo $familiar['DNI'] ?>" readonly>
+								</div>
 							</div>
-						</div>
 
-						<div class="form-group row">
-							<label class="col-sm-12 col-md-2 col-form-label">Fecha de Nacimiento: </label>
-							<div class="col-sm-12 col-md-10">
-								<input id="celular" class="form-control" type="date" value="<?php echo $familiar['fecha_nac'] ?>" readonly>
+							<div class="form-group row">
+								<label class="col-sm-12 col-md-2 col-form-label">Fecha de Nacimiento: </label>
+								<div class="col-sm-12 col-md-10">
+									<input id="fechaNacimiento" class="form-control" type="date" value="<?php echo $familiar['fecha_nac'] ?>" readonly>
+								</div>
 							</div>
-						</div>
 
-						<div class="form-group row">
-							<label class="col-sm-12 col-md-2 col-form-label">Correo: </label>
-							<div class="col-sm-12 col-md-10">
-								<input id="email" class="form-control" type="email" value="<?php echo $familiar['email'] ?>" readonly>
+							<div class="form-group row">
+								<label class="col-sm-12 col-md-2 col-form-label">Correo: </label>
+								<div class="col-sm-12 col-md-10">
+									<input id="email" class="form-control" type="email" value="<?php echo $familiar['email'] ?>" readonly>
+								</div>
 							</div>
-						</div>
 
+							<div class="text-right">
+								<button class="btn btn-primary" class="btn btn-primary" type="submit" id="btnModificarFamiliar">Modificar Datos y/o Contraseña</button>
+							</div>
+						</form>
 					</div>
 				<?php } ?>
 			</div>
