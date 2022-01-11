@@ -264,8 +264,65 @@ if (!isset($_SESSION['datos_usuario']) || !$_SESSION['role'] == 'asegurado') {
 
 				</div>
 
+
+				<?php
+				$consulta = "SELECT * FROM familiar WHERE id_asegurado = " . $id . "";
+				$fam = mysqli_query($conexion, $consulta);
+				$cont = 0;
+				$familiar = mysqli_fetch_array($fam);
+				foreach ($conexion->query($consulta) as $familiar) {
+					$cont += 1;
+
+				?>
+					<div class="pd-20 card-box mb-30">
+						<div class="clearfix">
+							<div class="pull-left">
+								<h4 class="text-blue h4">Familiar <?php echo $cont ?></h4>
+							</div>
+
+						</div>
+
+						<div class="form-group row">
+							<label class="col-sm-12 col-md-2 col-form-label">Nombres: </label>
+							<div class="col-sm-12 col-md-10">
+								<input id="celular" class="form-control" value="<?php echo $familiar['nombres'] ?>" readonly>
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-sm-12 col-md-2 col-form-label">Apellidos: </label>
+							<div class="col-sm-12 col-md-10">
+								<input id="celular" class="form-control" value="<?php echo $familiar['apellidos'] ?>" readonly>
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-sm-12 col-md-2 col-form-label">DNI: </label>
+							<div class="col-sm-12 col-md-10">
+								<input id="celular" class="form-control" value="<?php echo $familiar['DNI'] ?>" readonly>
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-sm-12 col-md-2 col-form-label">Fecha de Nacimiento: </label>
+							<div class="col-sm-12 col-md-10">
+								<input id="celular" class="form-control" type="date" value="<?php echo $familiar['fecha_nac'] ?>" readonly>
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-sm-12 col-md-2 col-form-label">Correo: </label>
+							<div class="col-sm-12 col-md-10">
+								<input id="email" class="form-control" type="email" value="<?php echo $familiar['email'] ?>" readonly>
+							</div>
+						</div>
+
+					</div>
+				<?php } ?>
 			</div>
+
 		</div>
+	</div>
 	</div>
 	<!-- js -->
 	<script src="vendors/scripts/core.js"></script>
