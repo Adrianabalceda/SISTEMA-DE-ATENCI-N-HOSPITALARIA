@@ -2,12 +2,12 @@
 session_start();
 
 if (!isset($_SESSION['datos_usuario']) || !$_SESSION['role'] == 'doctor') {
-	header("Location: ../../login.php");
+	header("Location: ../login.php");
 }
 
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
 	<!-- Basic Page Info -->
@@ -107,7 +107,7 @@ if (!isset($_SESSION['datos_usuario']) || !$_SESSION['role'] == 'doctor') {
 												echo $apellidos; ?></span>
 					</a>
 					<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-						<a class="dropdown-item" href=""><i class="dw dw-user1"></i>Perfil</a>
+						<a class="dropdown-item" href="../Doctor/perfil.php"><i class="dw dw-user1"></i>Perfil</a>
 						<a class="dropdown-item" href=""><i class="dw dw-settings2"></i>Ajustes</a>
 
 						<a class="dropdown-item" href="../src/cerrar_sesion.php"><i class="dw dw-logout"></i> Cerrar sesión</a>
@@ -199,28 +199,28 @@ if (!isset($_SESSION['datos_usuario']) || !$_SESSION['role'] == 'doctor') {
 				<div class="pd-20 card-box mb-30">
 					<div class="clearfix">
 						<div class="pull-left">
-							<h4 class="text-blue h4">Cambiar Datos</h4>
+							<h4 class="text-blue h4">Modificar Datos</h4>
 							<p class="mb-30">Modifique los datos que desee.</p>
 						</div>
 
 					</div>
-					<form>
+					<form role="form" action="/login/src/editar_datos_asegurado_logic.php" method="POST" class="formulario">
 						<div class="form-group row">
 							<label class="col-sm-12 col-md-2 col-form-label">Celular*: </label>
 							<div class="col-sm-12 col-md-10">
-								<input class="form-control" placeholder="999999999" type="tel" pattern="[9]{1}[0-9]{8}" required>
+								<input id="celular" class="form-control" placeholder="999999999" type="tel" pattern="[9]{1}[0-9]{8}" value="<?php echo $celular[0] ?>" required>
 							</div>
 						</div>
 							
 						<div class="form-group row">
 							<label class="col-sm-12 col-md-2 col-form-label">Correo*: </label>
 							<div class="col-sm-12 col-md-10">
-								<input class="form-control" placeholder="ejemplo@gmail.com" type="email" pattern="^\w+{2,3}$@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" size="30" required>
+								<input id="email" class="form-control" placeholder="ejemplo@gmail.com" type="email" pattern="^\w+{2,3}$@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" value="<?php echo $email[0] ?>" size="30" required>
 							</div>
 						</div>
 
 						<div class="text-right">
-							<button class="btn btn-primary">Modificar</button>
+							<button class="btn btn-primary" type="submit" id="btnModificarDatos">Modificar</button>
 						</div>
 					</form>
 
@@ -230,11 +230,11 @@ if (!isset($_SESSION['datos_usuario']) || !$_SESSION['role'] == 'doctor') {
 				<div class="pd-20 card-box mb-30">
 					<div class="clearfix">
 						<div class="pull-left">
-							<h4 class="text-blue h4">Cambiar Contraseña</h4>
+							<h4 class="text-blue h4">Modificar Contraseña</h4>
 						</div>
 
 					</div>
-					<form>
+					<form role="form" action="/login/src/editar_contra_doctor_logic.php" method="POST" class="formulario">
 						<div class="form-group row">
 							<label class="col-sm-12 col-md-2 col-form-label">Contraseña actual*: </label>
 							<div class="col-sm-12 col-md-10">
@@ -257,7 +257,7 @@ if (!isset($_SESSION['datos_usuario']) || !$_SESSION['role'] == 'doctor') {
 						</div>
 
 						<div class="text-right">
-							<button class="btn btn-primary">Modificar</button>
+							<button class="btn btn-primary" type="submit" id="btnModificarContra">Modificar</button>
 						</div>
 					</form>
 
