@@ -198,7 +198,7 @@
 							</div>
 						
 					</div>
-					<form >
+					<form action="../src/registrar_cita.php" method="post" class="formulario">
 					    <div class="form-group row">
 						<label class="col-sm-12 col-md-2 col-form-label">Asegurado o familiar</label>
 							<div class="col-sm-12 col-md-10">
@@ -214,7 +214,7 @@
 									 foreach ($conexion->query($consulta) as $familiar){
 										
 								?>  
-                                    <option value="<?php echo $familiar['id']?>"><?php echo $familiar['nombres'];echo " ";echo $familiar['apellidos']; $i++;?></option>
+                                    <option value="<?php echo $familiar['id_familiar']?>"><?php echo $familiar['nombres'];echo " ";echo $familiar['apellidos']; $i++;?></option>
 									<?php } ?>
                                 </select>
 								</div>
@@ -252,15 +252,21 @@
 						<p class="mb-30"><b>RECUERDE:</b> De seleccionar un rango horario que no pertenezca al horario de atención de 8AM a 5PM de lunes a viernes, su cita no será validada en admisión</p>
 						
 						<div class="text-right">
-									<button class="btn btn-primary">Registrar</button>
+									<button class="btn btn-primary" id="btnRegistrar">Registrar</button>
 								</div>
 					</form>
 					
 			
 		</div>
 	</div>
-	<script src="js/registerCitaLogic.js?v=<?php echo time(); ?>"></script>
-  
+	<script src="../assets/js/register_cita_logic.js?v=<?php echo time(); ?>"></script>
+	<!--Fotter-->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js?v=<?php echo time(); ?>" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- FontAwesome para iconos -->
+    <script src="https://kit.fontawesome.com/57888ec9eb.js?v=<?php echo time(); ?>" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11?v=<?php echo time(); ?>"></script>
+	
 	<!-- js -->
 	<script src="vendors/scripts/core.js"></script>
 	<script src="vendors/scripts/script.min.js"></script>
