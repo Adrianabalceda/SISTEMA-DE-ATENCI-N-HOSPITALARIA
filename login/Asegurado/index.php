@@ -79,7 +79,7 @@
 		echo $familiar['apellidos'];
 		
 		?></h3>
-		<p><?php echo $familiar['DNI'];
+		<p><?php echo $familiar['id_familiar'];
 		?></p>
 	</a>
 </li>
