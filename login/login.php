@@ -40,7 +40,8 @@
                <center>
                               
                                 <form action="../index.php">
-                                <input type="submit"  class="btn white"  value="Volver" id="BtnVolver"/>
+                                    
+                                <button style=" background-color:#202467;margin-top:30px;border: none; border-radius:200px;"><div style="display: inline-block;"><img style="position: absolute;margin-left: 140px;margin-top:16px;"src="assets/img/flecha.png"><input style="color: white;font-size: 24px;" type="submit"  class="btn white"  value="Volver" id="BtnVolver"/></div></button>
     </form>
     </center>
            </div>
