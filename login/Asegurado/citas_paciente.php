@@ -97,8 +97,8 @@
 						<span class="user-name"><? echo $nombres; echo " "; echo $apellidos;?></span>
 					</a>
 					<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-						<a class="dropdown-item" href=""><i class="dw dw-user1"></i>Perfil</a>
-						<a class="dropdown-item" href=""><i class="dw dw-settings2"></i>Ajustes</a>
+						<a class="dropdown-item" href="../Asegurado/perfil.php"><i class="dw dw-user1"></i>Perfil</a>
+						<a class="dropdown-item" href="../Asegurado/ajustes.php"><i class="dw dw-settings2"></i>Ajustes</a>
 						
 						<a class="dropdown-item" href="../src/cerrar_sesion.php"><i class="dw dw-logout"></i> Cerrar sesión</a>
 					</div>
