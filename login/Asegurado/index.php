@@ -55,7 +55,8 @@
 			<div class="user-notification">
 				<div class="dropdown">
 					<a class="dropdown-toggle no-arrow" href="#" role="button" data-toggle="dropdown">
-						<i class="icon-copy dw dw-notification"></i>
+					<i class="icon-copy ion-ios-people"  ></i>
+					
 						<span class="badge notification-active"></span>
 					</a>
 					<div class="dropdown-menu dropdown-menu-right">
@@ -265,7 +266,7 @@
 					<tbody>
 						<tr>
 						<?php
-							 $consulta = "SELECT * FROM cita_familiar_doctor WHERE id_familiar IN (SELECT id from familiar WHERE id_asegurado = ".$id.")";
+							 $consulta = "SELECT * FROM cita_familiar_doctor WHERE id_familiar IN (SELECT id_familiar from familiar WHERE id_asegurado = ".$id.")";
 							 $paci = mysqli_query($conexion, $consulta);
 							 
 							 $paciente = mysqli_fetch_array($paci);
