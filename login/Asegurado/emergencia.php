@@ -50,10 +50,11 @@
 		</div>
 		<div class="header-right">
 			
-			<div class="user-notification">
+		<div class="user-notification">
 				<div class="dropdown">
 					<a class="dropdown-toggle no-arrow" href="#" role="button" data-toggle="dropdown">
-						<i class="icon-copy dw dw-notification"></i>
+					<i class="icon-copy ion-ios-people"  ></i>
+					
 						<span class="badge notification-active"></span>
 					</a>
 					<div class="dropdown-menu dropdown-menu-right">
@@ -74,8 +75,11 @@
 		<img src="https://thumbs.dreamstime.com/b/icono-p%C3%BArpura-fino-del-usuario-muestra-linear-de-la-pendiente-136856587.jpg" alt="">
 		<h3><?php echo $familiar['nombres'];
 		echo " "; 
-		echo $familiar['apellidos'];?></h3>
+		echo $familiar['apellidos'];
 		
+		?></h3>
+		<p><?php echo $familiar['id_familiar'];
+		?></p>
 	</a>
 </li>
 

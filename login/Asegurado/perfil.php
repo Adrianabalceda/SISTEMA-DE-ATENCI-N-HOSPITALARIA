@@ -57,40 +57,41 @@ if (!isset($_SESSION['datos_usuario']) || !$_SESSION['role'] == 'asegurado') {
 		</div>
 		<div class="header-right">
 
-			<div class="user-notification">
+		<div class="user-notification">
 				<div class="dropdown">
 					<a class="dropdown-toggle no-arrow" href="#" role="button" data-toggle="dropdown">
-						<i class="icon-copy dw dw-notification"></i>
+					<i class="icon-copy ion-ios-people"  ></i>
+					
 						<span class="badge notification-active"></span>
 					</a>
 					<div class="dropdown-menu dropdown-menu-right">
 						<div class="notification-list mx-h-350 customscroll">
 							<?php
-							$consulta = "SELECT * FROM familiar WHERE id_asegurado = " . $id . "";
-							$fam = mysqli_query($conexion, $consulta);
+							 $consulta = "SELECT * FROM familiar WHERE id_asegurado = ".$id."";
+							 $fam = mysqli_query($conexion, $consulta);
+							 
+							 $familiar = mysqli_fetch_array($fam);
+							 foreach ($conexion->query($consulta) as $familiar){
+						  
+																		 ?>
+						<ul>
 
-							$familiar = mysqli_fetch_array($fam);
-							foreach ($conexion->query($consulta) as $familiar) {
+<li>
+	<a href="#">
 
-							?>
-								<ul>
+		<img src="https://thumbs.dreamstime.com/b/icono-p%C3%BArpura-fino-del-usuario-muestra-linear-de-la-pendiente-136856587.jpg" alt="">
+		<h3><?php echo $familiar['nombres'];
+		echo " "; 
+		echo $familiar['apellidos'];
+		
+		?></h3>
+		<p><?php echo $familiar['id_familiar'];
+		?></p>
+	</a>
+</li>
 
-									<li>
-										<a href="#">
-
-											<img src="https://thumbs.dreamstime.com/b/icono-p%C3%BArpura-fino-del-usuario-muestra-linear-de-la-pendiente-136856587.jpg" alt="">
-											<h3><?php echo $familiar['nombres'];
-												echo " ";
-												echo $familiar['apellidos'];
-
-												?></h3>
-											<p><?php echo $familiar['DNI'];
-												?></p>
-										</a>
-									</li>
-
-								</ul>
-							<?php } ?>
+</ul>
+<?php }?>
 						</div>
 					</div>
 				</div>
