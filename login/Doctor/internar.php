@@ -197,11 +197,13 @@
 							</div>
 						
 					</div>
+
 					<form action="../src/internar.php" method="post" class="formulario"><div class="form-group row">
 						<label class="col-sm-12 col-md-2 col-form-label">Asegurado o familiar</label>
 							<div class="col-sm-12 col-md-10">
 								<select class="custom-select col-12" id = "paciente" name="paciente">
 								<option   selected>Seleccione</option>
+
 									 
 									<?php
 									 $consulta = "SELECT * FROM familiar";
@@ -227,7 +229,10 @@
 						<div class="form-group row">
 						<label class="col-sm-12 col-md-2 col-form-label">Camilla</label>
 							<div class="col-sm-12 col-md-10">
+
 								<select class="custom-select col-12" id = "cama" name="cama">
+
+								
 								<option selected>Seleccione</option>
 									 
 									<?php
@@ -248,7 +253,11 @@
 						<div class="form-group row">
 							<label class="col-sm-12 col-md-2 col-form-label">Especialidad</label>
 							<div class="col-sm-12 col-md-10">
+
 								<select class="custom-select col-12" id = "especialidad" name="especialidad">
+
+
+
 								<option selected>Seleccione</option>
                                     <option  input value="1">Medicina General</option>
                                     <option value="2">Cardiología</option>
@@ -265,31 +274,44 @@
 						<div class="form-group row">
 							<label class="col-sm-12 col-md-2 col-form-label">Fecha</label>
 							<div class="col-sm-12 col-md-10">
+
 								<input class="form-control date-picker" placeholder="Seleccione la fecha" type="text" id = "fecha" name="fecha">
+
+
 							</div>
 						</div>
 						
 						<div class="form-group row">
 							<label class="col-sm-12 col-md-2 col-form-label">Hora</label>
 							<div class="col-sm-12 col-md-10">
+
 								<input class="form-control time-picker" placeholder="Seleccione la hora" type="text" id = "hora" name="hora">
+
+								
 							</div>
 						</div>
 						<div class="form-group row">
 							<label class="col-sm-12 col-md-2 col-form-label">Descripción</label>
 							<div class="col-sm-12 col-md-10">
+
 								<input class="form-control" placeholder="Describa la situación" type="text" id = "descripcion" name="descripcion">
+
+							
 							</div>
 						</div>
 					
 						<div class="text-right">
-									<button class="btn btn-primary" id="btnRegistrar">Registrar</button>
+
+									
+									<button class="btn btn-primary" type="submit" id="btnRegistrar">Registrar</button>
+
 								</div>
 					</form>
 					
 			
 		</div>
 	</div>
+
 
 	<script src="../assets/js/internar.js?v=<?php echo time(); ?>"></script>
 	<!--Fotter-->
@@ -299,6 +321,7 @@
     <script src="https://kit.fontawesome.com/57888ec9eb.js?v=<?php echo time(); ?>" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11?v=<?php echo time(); ?>"></script>
 	
+
 	<!-- js -->
 	<script src="vendors/scripts/core.js"></script>
 	<script src="vendors/scripts/script.min.js"></script>
