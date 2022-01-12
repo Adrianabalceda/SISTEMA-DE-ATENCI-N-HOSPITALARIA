@@ -160,8 +160,8 @@ if (!isset($_SESSION['datos_usuario']) || !$_SESSION['role'] == 'doctor') {
 
 
 					<li>
-						<a href="chat.php" class="dropdown-toggle no-arrow">
-							<span class="micon dw dw-chat3"></span><span class="mtext">Chat</span>
+						<a href="retiro.php" class="dropdown-toggle no-arrow">
+							<span class="micon dw dw-chat3"></span><span class="mtext">Retiro</span>
 						</a>
 					</li>
 

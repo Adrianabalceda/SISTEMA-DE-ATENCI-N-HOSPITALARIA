@@ -209,7 +209,7 @@
 					<tbody>
 						<tr>
 						<?php
-							 $consulta = "SELECT * FROM cita_paciente_doctor WHERE id_asegurado= '$id'";
+							 $consulta = "SELECT * FROM cita_paciente_doctor WHERE id_asegurado= ".$id."";
 							 $paci = mysqli_query($conexion, $consulta);
 							 
 							 $paciente = mysqli_fetch_array($paci);
@@ -224,14 +224,18 @@
 							<td><?php echo $nombres;?></td>
 							<td><?php echo $apellidos;?></td>
 							
-							<td><?php echo $paciente['id_especialidad']; ?></td>
+							
 							<?php
-							 $consulta = "SELECT nombres,apellidos FROM doctor WHERE id= ".$paciente['id_especialidad']."";
+							 $consulta = "SELECT id_especialidad,nombres,apellidos FROM doctor WHERE id = ".$paciente['id_doctor']."";
 							 $paci = mysqli_query($conexion, $consulta);
 							 $paciente = mysqli_fetch_array($paci);
+							 $consulta2 = "SELECT * FROM especialidad WHERE id_especialidad = ".$paciente['id_especialidad']."";
+							 $pac = mysqli_query($conexion, $consulta2);
+							 $especialidad = mysqli_fetch_array($pac);
+
 							
 							?> </td>
-							
+							<td><?php echo $especialidad['nombre'];?></td>
 							<td><?php echo $paciente['nombres']; echo ' '; echo $paciente['apellidos'];?></td>
 
 							

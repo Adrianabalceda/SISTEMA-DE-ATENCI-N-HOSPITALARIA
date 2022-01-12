@@ -198,14 +198,14 @@
 							</div>
 						
 					</div>
-					<form>
+					<form action="../src/emergencia.php" method="post" class="formulario">
 					    <div class="form-group row">
 						<label class="col-sm-12 col-md-2 col-form-label">Asegurado o familiar</label>
 							<div class="col-sm-12 col-md-10">
-								<select class="custom-select col-12">
+								<select class="custom-select col-12" name="paciente" id="paciente">
 								<option selected>Seleccione</option>
 									 
-									<option value="1"><?php echo $nombres;echo " ";echo $apellidos;?></option><?php
+									<option value="<?php echo $id?>"><?php echo $nombres;echo " ";echo $apellidos;?></option><?php
 									 $consulta = "SELECT * FROM familiar WHERE id_asegurado = ".$id."";
 									 $fam = mysqli_query($conexion, $consulta);
 									 
@@ -214,57 +214,52 @@
 									 foreach ($conexion->query($consulta) as $familiar){
 										
 								?>  
-                                    <option value="<?php $i?>"><?php echo $familiar['nombres'];echo " ";echo $familiar['apellidos']; $i++;?></option>
+                                    <option value="<?php echo $familiar['id_familiar']?>"><?php echo $familiar['nombres'];echo " ";echo $familiar['apellidos']; $i++;?></option>
 									<?php } ?>
                                 </select>
 								</div>
 						</div>
-
 						<div class="form-group row">
-							<label class="col-sm-12 col-md-2 col-form-label">Especialidad</label>
+							<label class="col-sm-12 col-md-2 col-form-label">Descripción</label>
 							<div class="col-sm-12 col-md-10">
-								<select class="custom-select col-12">
-								<option selected>Seleccione</option>
-                                    <option value="1">Medicina General</option>
-                                    <option value="2">Cardiología</option>
-                                    <option value="3">Neurología</option>
-                                    <option value="4">Pediatría</option>
-                                    <option value="5">Dermatología</option>
-								</select>
+								<input class="form-control" placeholder="Describa la situación" type="text" id= "descripcion" name ="descripcion">
 							</div>
 						</div>
-						
 						
 						<div class="form-group row">
 							<label class="col-sm-12 col-md-2 col-form-label">Fecha</label>
 							<div class="col-sm-12 col-md-10">
-								<input class="form-control date-picker" placeholder="Seleccione la fecha" type="text">
+								<input class="form-control date-picker" placeholder="Seleccione la fecha" type="text" id= "fecha" name ="fecha">
 							</div>
 						</div>
 						
 						<div class="form-group row">
 							<label class="col-sm-12 col-md-2 col-form-label">Hora</label>
 							<div class="col-sm-12 col-md-10">
-								<input class="form-control time-picker" placeholder="Seleccione la hora" type="text">
+								<input class="form-control time-picker" placeholder="Seleccione la hora" type="text" id= "hora" name ="hora">
 							</div>
 						</div>
 						
-						<div class="form-group row">
-							<label class="col-sm-12 col-md-2 col-form-label">Descripción</label>
-							<div class="col-sm-12 col-md-10">
-								<input class="form-control" placeholder="Describa la situación" type="text">
-							</div>
-						</div>
+						
 						<p class="mb-30"><b>NOTA:</b> Luego de culminar el registro nuestra central de emergencia se pondrá en contacto con usted.</p>
 						
 						<div class="text-right">
-									<button class="btn btn-primary">Registrar</button>
+									<button class="btn btn-primary" id="btnRegistrar">Registrar</button>
 								</div>
 					</form>
 					
 			
 		</div>
 	</div>
+	<script src="../assets/js/register_emergencia.js?v=<?php echo time(); ?>"></script>
+	<!--Fotter-->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js?v=<?php echo time(); ?>" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- FontAwesome para iconos -->
+    <script src="https://kit.fontawesome.com/57888ec9eb.js?v=<?php echo time(); ?>" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11?v=<?php echo time(); ?>"></script>
+	
+
 	<!-- js -->
 	<script src="vendors/scripts/core.js"></script>
 	<script src="vendors/scripts/script.min.js"></script>
