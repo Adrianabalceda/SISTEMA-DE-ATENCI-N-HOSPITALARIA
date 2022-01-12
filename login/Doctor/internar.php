@@ -197,29 +197,30 @@
 							</div>
 						
 					</div>
-					<role="form" action="doctor/retiro.php" method="POST" class="formulario">
-					<div class="form-group row">
+
+					<form action="../src/internar.php" method="post" class="formulario"><div class="form-group row">
 						<label class="col-sm-12 col-md-2 col-form-label">Asegurado o familiar</label>
 							<div class="col-sm-12 col-md-10">
-								<select class="custom-select col-12">
-								<option selected>Seleccione</option>
+								<select class="custom-select col-12" id = "paciente" name="paciente">
+								<option   selected>Seleccione</option>
+
 									 
 									<?php
 									 $consulta = "SELECT * FROM familiar";
 									 
 									 $consulta2 = "SELECT * FROM asegurado";
 									 
-									 $i = 1;
-									 foreach ($conexion->query($consulta) as $asegurado){
+									
+									 foreach ($conexion->query($consulta2) as $asegurado){
 										
 										?>  
-											<option value="<?php echo $i?>"><?php echo $asegurado['nombres'];echo " ";echo $asegurado['apellidos']; $i++;?></option>
+											<option value="<?php echo $asegurado['id'];?>"><?php echo $asegurado['nombres'];echo " ";echo $asegurado['apellidos']; ?></option>
 											<?php } 
 
-									 foreach ($conexion->query($consulta2) as $familiar){
+									 foreach ($conexion->query($consulta) as $familiar){
 										
 								?>  
-                                    <option value="<?php echo $i?>"><?php echo $familiar['nombres'];echo " ";echo $familiar['apellidos']; $i++;?></option>
+                                    <option value="<?php echo $familiar['id_familiar'];?>"><?php echo $familiar['nombres'];echo " ";echo $familiar['apellidos']; ?></option>
 									<?php } ?>
                                 </select>
 								</div>
@@ -228,17 +229,20 @@
 						<div class="form-group row">
 						<label class="col-sm-12 col-md-2 col-form-label">Camilla</label>
 							<div class="col-sm-12 col-md-10">
-								<select class="custom-select col-12">
+
+								<select class="custom-select col-12" id = "cama" name="cama">
+
+								
 								<option selected>Seleccione</option>
 									 
 									<?php
 									 $consulta = "SELECT id FROM cama WHERE estado = 'desocupada'";
 									 
-									 $i = 0;
+								
 									 foreach ($conexion->query($consulta) as $cama){
 										
 										?>  
-											<option value="<?php echo $id?>"><?php echo $cama['id'];$i++;?></option>
+											<option value="<?php echo $cama['id'];?>"><?php echo $cama['id'];?></option>
 											<?php  
 } ?>
                                 </select>
@@ -249,7 +253,11 @@
 						<div class="form-group row">
 							<label class="col-sm-12 col-md-2 col-form-label">Especialidad</label>
 							<div class="col-sm-12 col-md-10">
-								<select class="custom-select col-12">
+
+								<select class="custom-select col-12" id = "especialidad" name="especialidad">
+
+
+
 								<option selected>Seleccione</option>
                                     <option  input value="1">Medicina General</option>
                                     <option value="2">Cardiología</option>
@@ -266,31 +274,54 @@
 						<div class="form-group row">
 							<label class="col-sm-12 col-md-2 col-form-label">Fecha</label>
 							<div class="col-sm-12 col-md-10">
-								<input class="form-control date-picker" placeholder="Seleccione la fecha" type="text">
+
+								<input class="form-control date-picker" placeholder="Seleccione la fecha" type="text" id = "fecha" name="fecha">
+
+
 							</div>
 						</div>
 						
 						<div class="form-group row">
 							<label class="col-sm-12 col-md-2 col-form-label">Hora</label>
 							<div class="col-sm-12 col-md-10">
-								<input class="form-control time-picker" placeholder="Seleccione la hora" type="text">
+
+								<input class="form-control time-picker" placeholder="Seleccione la hora" type="text" id = "hora" name="hora">
+
+								
 							</div>
 						</div>
 						<div class="form-group row">
 							<label class="col-sm-12 col-md-2 col-form-label">Descripción</label>
 							<div class="col-sm-12 col-md-10">
-								<input class="form-control" placeholder="Describa la situación" type="text">
+
+								<input class="form-control" placeholder="Describa la situación" type="text" id = "descripcion" name="descripcion">
+
+							
 							</div>
 						</div>
 					
 						<div class="text-right">
-									<button class="btn btn-primary">Registrar</button>
+
+									
+									<button class="btn btn-primary" type="submit" id="btnRegistrar">Registrar</button>
+
 								</div>
 					</form>
 					
 			
 		</div>
 	</div>
+
+
+	<script src="../assets/js/internar.js?v=<?php echo time(); ?>"></script>
+	<!--Fotter-->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js?v=<?php echo time(); ?>" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- FontAwesome para iconos -->
+    <script src="https://kit.fontawesome.com/57888ec9eb.js?v=<?php echo time(); ?>" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11?v=<?php echo time(); ?>"></script>
+	
+
 	<!-- js -->
 	<script src="vendors/scripts/core.js"></script>
 	<script src="vendors/scripts/script.min.js"></script>

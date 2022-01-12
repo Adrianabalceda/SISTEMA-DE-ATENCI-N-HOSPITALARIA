@@ -56,7 +56,8 @@
 			<div class="user-notification">
 				<div class="dropdown">
 					<a class="dropdown-toggle no-arrow" href="#" role="button" data-toggle="dropdown">
-						<i class="icon-copy dw dw-notification"></i>
+					<i class="icon-copy ion-ios-people"  ></i>
+					
 						<span class="badge notification-active"></span>
 					</a>
 					<div class="dropdown-menu dropdown-menu-right">
