@@ -25,18 +25,16 @@
     if($count==1){
         $sql = "INSERT INTO `cita_familiar_doctor` (`id_familiar`, `id_doctor`, `fecha`, 
         `hora`) 
-        VALUES ('$nombres','$id_doctor','$celular','$email')";
+        VALUES (".$nombres.",".$id_doctor.",".$celular.",".$email.")";
         mysqli_query($conexion, $sql);
     
-       
+        
         header("location: ../Asegurado/citas_paciente.php?mensaje=1");
     }
     else{
 
         if($count2==1){
-        $sql = "INSERT INTO `cita_paciente_doctor` (`id_asegurado`, `id_doctor`, `fecha`, 
-        `hora`) 
-        VALUES ('$nombres','$id_doctor','$celular','$email')";
+            $sql = "INSERT INTO `cita_paciente_doctor` (`id_asegurado`, `id_doctor`, `fecha`, `hora`) VALUES (".$nombres.",".$id_doctor.",".$celular.",".$email.")";
         mysqli_query($conexion, $sql);
         header("location: ../Asegurado/citas_paciente.php?mensaje=1");
         }
