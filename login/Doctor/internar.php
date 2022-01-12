@@ -153,8 +153,8 @@
 					
 					
 					<li>
-						<a href="chat.php" class="dropdown-toggle no-arrow">
-							<span class="micon dw dw-chat3"></span><span class="mtext">Chat</span>
+						<a href="retiro.php" class="dropdown-toggle no-arrow">
+							<span class="micon dw dw-chat3"></span><span class="mtext">Retiro</span>
 						</a>
 					</li>
 				
@@ -197,7 +197,7 @@
 							</div>
 						
 					</div>
-					<form>
+					<role="form" action="doctor/retiro.php" method="POST" class="formulario">
 					<div class="form-group row">
 						<label class="col-sm-12 col-md-2 col-form-label">Asegurado o familiar</label>
 							<div class="col-sm-12 col-md-10">
@@ -251,13 +251,15 @@
 							<div class="col-sm-12 col-md-10">
 								<select class="custom-select col-12">
 								<option selected>Seleccione</option>
-                                    <option value="1">Medicina General</option>
+                                    <option  input value="1">Medicina General</option>
                                     <option value="2">Cardiología</option>
                                     <option value="3">Neurología</option>
                                     <option value="4">Pediatría</option>
                                     <option value="5">Dermatología</option>
+									
 								</select>
 							</div>
+							
 						</div>
 						
 						
