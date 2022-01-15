@@ -1,12 +1,13 @@
 <?php
     include('conexion_db.php');
-    $usuario = $_POST['paciente'];
-    $cama = $_POST['cama'];
+    $nombres = $_POST['nombres'];
+    $apellidos = $_POST['apellidos'];
+    $celular = $_POST['celular'];
+    $email = $_POST['email'];
+    $dni = $_POST['dni'];
     $especialidad_id = $_POST['especialidad'];
-    $fecha =$_POST['fecha'];
-    $hora =$_POST['hora'];
-    $descripcion =$_POST['descripcion'];
-
+    $doctor_id = stripcslashes($dni);
+    $usuario = strtoupper($nombres.' '.$apellidos);
    
     switch($especialidad_id){
         case 1:
@@ -30,15 +31,15 @@
     $count = mysqli_num_rows($result);
     //var_dump($count);
 
-    $sql = "SELECT * FROM `internado` WHERE id_asegurado = '$usuario'";
+    $sql = "SELECT * FROM `doctor` WHERE id = '$doctor_id'";
     $result = mysqli_query($conexion, $sql);
     $count2 = mysqli_num_rows($result);
    
 
     if($count < 1 && $count2 < 1){
-        $sql = "INSERT INTO `internado` (`id_asegurado`, `usuario`, `id_camilla`, `id_especialidad`, 
-        `fecha`, `hora`, `descripcion`) 
-        VALUES ('$usuario','$usuario','$cama','$especialidad_id','$fecha','$hora','$descripcion)";
+        $sql = "INSERT INTO `doctor` (`id`, `usuario`, `contraseña`, `nombres`, 
+        `apellidos`, `id_especialidad`, `email`, `celular`) 
+        VALUES ('$doctor_id','$usuario','$doctor_id','$nombres','$apellidos','$especialidad_id','$email','$celular')";
         mysqli_query($conexion, $sql);
     
         //var_dump($sql);
@@ -54,3 +55,6 @@
 
         
     }
+
+
+?>
